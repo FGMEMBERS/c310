@@ -163,7 +163,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!--end engines 2 -->
 
 <!-- engine gauges cluster -->  
-  <instrument include="../Instruments/manifold-press.xml">
+  <instrument include="../Instruments/dual-manifold-pressure.xml">
    <name>Manifold Pressure Gauge</name>
    <x>942</x>
    <y>645</y>
