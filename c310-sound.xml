@@ -6,7 +6,7 @@
  
 <!-- Engine 1 -->
   <crank>
-   <name>engstart</name>
+   <name>engstart1</name>
    <path>Sounds/engstart.wav</path>
    <property>/engines/engine[0]/cranking</property>
    <volume>
@@ -15,7 +15,7 @@
   </crank>
 
   <crank>
-   <name>crank</name>
+   <name>crank1</name>
    <mode>looped</mode>
    <path>Sounds/cranking.wav</path>
    <condition>
@@ -30,7 +30,7 @@
   </crank>
 
   <crank>
-   <name>cough</name>
+   <name>cough1</name>
    <path>Sounds/coughing.wav</path>
    <property>/engines/engine[0]/running</property>
    <volume>
@@ -39,7 +39,7 @@
   </crank>
 
   <engine>
-   <name>engine</name>
+   <name>engine1</name>
    <mode>looped</mode>
    <path>Sounds/wasp.wav</path>
    <property>/engines/engine[0]/running</property>
@@ -59,9 +59,10 @@
    </pitch>
   </engine>
 
-<!-- Engine 1 -->
+<!-- Engine 2 -->
+
   <crank>
-   <name>engstart</name>
+   <name>engstart2</name>
    <path>Sounds/engstart.wav</path>
    <property>/engines/engine[1]/cranking</property>
    <volume>
@@ -70,7 +71,7 @@
   </crank>
 
   <crank>
-   <name>crank</name>
+   <name>crank2</name>
    <mode>looped</mode>
    <path>Sounds/cranking.wav</path>
    <condition>
@@ -85,7 +86,7 @@
   </crank>
 
   <crank>
-   <name>cough</name>
+   <name>cough2</name>
    <path>Sounds/coughing.wav</path>
    <property>/engines/engine[1]/running</property>
    <volume>
@@ -94,7 +95,7 @@
   </crank>
 
   <engine>
-   <name>engine</name>
+   <name>engine2</name>
    <mode>looped</mode>
    <path>Sounds/wasp.wav</path>
    <property>/engines/engine[1]/running</property>
@@ -146,8 +147,12 @@
    <condition>
     <greather-than>
      <property>/gear/gear[0]/position-norm</property>
-     <value>0.9</value>
+     <value>0.01</value>
     </greather-than>
+    <less-than>
+     <property>/gear/gear[0]/position-norm</property>
+     <value>0.1</value>
+    </less-than>
    </condition>
   </gear>
 
