@@ -18,6 +18,14 @@
   </supplier>
 
   <supplier>
+    <name>Battery 2</name>
+    <prop>/systems/electrical/suppliers/battery[1]</prop>
+    <kind>battery</kind>
+    <volts>24</volts>
+    <amps>60</amps>   <!-- WAG -->
+  </supplier>
+
+  <supplier>
     <name>Alternator 1</name>
     <prop>/systems/electrical/suppliers/alternator[0]</prop>
     <kind>alternator</kind>
@@ -77,8 +85,13 @@
   </output>
 
   <output>
-    <name>Fuel Pump Power</name>
-    <prop>/systems/electrical/outputs/fuel-pump</prop>
+    <name>Fuel Pump 1 Power</name>
+    <prop>/systems/electrical/outputs/fuel-pump[0]</prop>
+  </output>
+
+  <output>
+    <name>Fuel Pump 2 Power</name>
+    <prop>/systems/electrical/outputs/fuel-pump[1]</prop>
   </output>
 
   <output>
@@ -137,7 +150,7 @@
     <input>Alternator 1</input>
     <output>Bus Bar</output>
     <switch>
-      <prop>/controls/switches/master-alt[0]</prop>
+      <prop>/controls/engines/engine[0]/master-alt[0]</prop>
     </switch>
   </connector>
 
@@ -145,7 +158,7 @@
     <input>Alternator 2</input>
     <output>Bus Bar</output>
     <switch>
-      <prop>/controls/switches/master-alt[1]</prop>
+      <prop>/controls/engines/engine[0]/master-alt[1]</prop>
     </switch>
   </connector>
 
@@ -158,7 +171,15 @@
     <input>Battery 1</input>
     <output>Bus Bar</output>
     <switch>
-      <prop>/controls/switches/master-bat</prop>
+      <prop>/controls/engines/engine[0]/master-bat</prop>
+    </switch>
+  </connector>
+
+  <connector>
+    <input>Battery 2</input>
+    <output>Bus Bar</output>
+    <switch>
+      <prop>/controls/engines/engine[1]/master-bat</prop>
     </switch>
   </connector>
 
@@ -202,9 +223,17 @@
 
   <connector>
     <input>Bus Bar</input>
-    <output>Fuel Pump Power</output>
+    <output>Fuel Pump 1 Power</output>
     <switch>
       <prop>/controls/engines/engine[0]/fuel-pump</prop>
+    </switch>
+  </connector>
+
+  <connector>
+    <input>Bus Bar</input>
+    <output>Fuel Pump 2 Power</output>
+    <switch>
+      <prop>/controls/engines/engine[1]/fuel-pump</prop>
     </switch>
   </connector>
 
