@@ -72,6 +72,8 @@
   <output>
     <name>Instrument Power</name>
     <prop>/systems/electrical/outputs/instr-ignition-switch</prop>
+    <prop>/systems/electrical/outputs/adf</prop>
+    <prop>/systems/electrical/outputs/dme</prop>
   </output>
 
   <output>
