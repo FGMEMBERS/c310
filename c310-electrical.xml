@@ -124,6 +124,10 @@
     <prop>/systems/electrical/outputs/pitot-heat</prop>
   </output>
 
+  <output>
+    <name>GPS Power</name>
+    <prop>/systems/electrical/outputs/gps</prop>
+  </output>
 
   <!-- connect in power sources -->
 
@@ -238,6 +242,12 @@
     <input>Bus Bar</input>
     <output>Pitot Heat Power</output>
     <switch>/controls/switches/pitot-heat</switch>
+  </connector>
+
+  <connector>
+    <input>Bus Bar</input>
+    <output>GPS Power</output>
+    <switch>/controls/circuit-breakers/gps</switch>
   </connector>
 
 </PropertyList>
