@@ -9,7 +9,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
 <PropertyList>
 
  <name>C310 2D instruments.</name>
- <background>Aircraft/c172/Panels/Textures/transparent-bg.rgb</background>
+ <background>Aircraft/Generic/Panels/Textures/transparent-bg.rgb</background>
  <w>1024</w>
  <h>768</h>
 
