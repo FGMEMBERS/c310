@@ -5,7 +5,7 @@
  <fx>
  
   <crank>
-   <name>crank</name>
+   <name>crank1</name>
    <path>Sounds/cranking.wav</path>
    <property>/engines/engine[0]/cranking</property>
    <volume>
@@ -14,7 +14,7 @@
   </crank>
 
   <crank>
-   <name>crank</name>
+   <name>crank2</name>
    <path>Sounds/cranking.wav</path>
    <property>/engines/engine[1]/cranking</property>
    <volume>
@@ -23,7 +23,7 @@
   </crank>
  
   <engine>
-   <name>engine</name>
+   <name>engine1</name>
    <path>Sounds/wasp.wav</path>
    <mode>looped</mode>
    <property>/engines/engine[0]/running</property>
@@ -44,7 +44,7 @@
   </engine>
 
   <engine>
-   <name>engine</name>
+   <name>engine2</name>
    <path>Sounds/wasp.wav</path>
    <mode>looped</mode>
    <property>/engines/engine[1]/running</property>
