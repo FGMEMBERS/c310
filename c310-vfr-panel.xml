@@ -258,7 +258,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-
+<!--
   <instrument include="../Instruments/adf.xml">
    <name>ADF Gauge</name>
    <x>130</x>
@@ -266,8 +266,16 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <w>120</w>
    <h>120</h>
   </instrument>
-
+-->
 <!-- end radio nav instruments -->
+
+  <instrument include="../Instruments/gyro.xml">
+   <name>Directional Gauge</name>
+   <x>130</x>
+   <y>99</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
 
 
 <!-- radio stack -->
