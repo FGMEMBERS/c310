@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>c310-dpm.ac</path>
+
+ <animation>
+  <type>spin</type>
+  <object-name>LeftPropeller</object-name>
+  <property>/engines/engine[0]/rpm</property>
+  <center>
+   <x-m>-1.5</x-m>
+   <y-m>-1.65</y-m>
+   <z-m>-0.5</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>RightPropeller</object-name>
+  <property>/engines/engine[1]/rpm</property>
+  <center>
+   <x-m>-1.5</x-m>
+   <y-m>1.65</y-m>
+   <z-m>-0.5</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Rudder</object-name>
+  <property>/controls/rudder</property>
+  <factor>25</factor> <!-- check -->
+  <center>
+   <x-m>5.5</x-m>
+   <y-m>0</y-m>
+   <z-m>1.5</z-m>
+  </center>
+  <axis>
+   <x>0.5</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftOuterFlap</object-name>
+  <object-name>LeftInnerFlap</object-name>
+  <property>/controls/flaps</property>
+  <factor>30</factor> <!-- check -->
+  <center>
+   <x-m>0.4</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-0.05</x>
+   <y>1</y>
+   <z>-.1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightInnerFlap</object-name>
+  <object-name>RightOuterFlap</object-name>
+  <property>/controls/flaps</property>
+  <factor>30</factor> <!-- check -->
+  <center>
+   <x-m>0.4</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0.05</x>
+   <y>1</y>
+   <z>.1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftAileron</object-name>
+  <property>/controls/aileron</property>
+  <factor>15</factor> <!-- check -->
+  <center>
+   <x-m>0.75</x-m>
+   <y-m>-4.0</y-m>
+   <z-m>0.5</z-m>
+  </center>
+  <axis>
+   <x>-.08</x>
+   <y>-1.0</y>
+   <z>0.2</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightAileron</object-name>
+  <property>/controls/aileron</property>
+  <factor>15</factor> <!-- check -->
+  <center>
+   <x-m>0.75</x-m>
+   <y-m>4.0</y-m>
+   <z-m>0.5</z-m>
+  </center>
+  <axis>
+   <x>-.08</x>
+   <y>1.0</y>
+   <z>-0.2</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftElevator</object-name>
+  <object-name>RightElevator</object-name>
+  <property>/controls/elevator</property>
+  <factor>15</factor> <!-- check -->
+  <center>
+   <x-m>5.1</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.42</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
