@@ -21,6 +21,7 @@
     <name>Alternator 1</name>
     <prop>/systems/electrical/suppliers/alternator[0]</prop>
     <kind>alternator</kind>
+    <rpm-source>/engines/engine[0]/rpm</rpm-source>
     <volts>24</volts> <!-- stubbed in -->
     <amps>60</amps>   <!-- WAG -->
   </supplier>
@@ -29,6 +30,7 @@
     <name>Alternator 2</name>
     <prop>/systems/electrical/suppliers/alternator[1]</prop>
     <kind>alternator</kind>
+    <rpm-source>/engines/engine[1]/rpm</rpm-source>
     <volts>24</volts> <!-- stubbed in -->
     <amps>60</amps>   <!-- WAG -->
   </supplier>
