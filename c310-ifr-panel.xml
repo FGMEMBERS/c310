@@ -162,7 +162,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../Instruments/gear-indicator.xml">
    <name>Gear Indicator Light</name>
    <x>400</x>
-   <y>159</y>
+   <y>155</y>
    <w>40</w>
    <h>17</h>
   </instrument>
@@ -170,7 +170,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>400</x>
-   <y>140</y>
+   <y>135</y>
    <w>40</w>
    <h>17</h>
   </instrument>
@@ -217,23 +217,23 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <!-- instrument include="../Instruments/adf.xml">
+  <instrument include="../Instruments/adf.xml">
    <name>ADF Gauge</name>
    <x>130</x>
    <y>99</y>
    <w>120</w>
    <h>120</h>
-  </instrument> -->
+  </instrument>
 
 <!-- end radio nav instruments -->
 
- <instrument include="../Instruments/rmi.xml">
+<!-- <instrument include="../Instruments/rmi.xml">
    <name>Directional Gauge</name>
    <x>130</x>
    <y>99</y>
    <w>120</w>
    <h>120</h>
-  </instrument> 
+  </instrument> -->
 
 
 <!-- radio stack -->
