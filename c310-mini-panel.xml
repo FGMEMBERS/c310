@@ -134,8 +134,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/gyro.xml">
-   <name>Directional Gyro</name>
+  <instrument include="../c172/Instruments/hsi.xml">
+   <name>Horizontal Situation Indicator</name>
    <x>515</x>
    <y>375</y>
    <w>120</w>
