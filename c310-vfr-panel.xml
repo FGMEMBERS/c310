@@ -35,7 +35,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <PropertyList>
 
  <name>Cessna C310 VFR Panel</name>
- <background>Aircraft/c310/310c.rgb</background>
+ <background>Aircraft/c310/310-panel-bg.rgb</background>
  <w>1424</w>
  <h>468</h>
  <y-offset>0</y-offset>
