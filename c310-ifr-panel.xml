@@ -284,7 +284,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   
   <instrument include="../Instruments/twin-magneto-switch.xml">
    <name>Magneto switch panel</name>
-   <x>700</x>
+   <x>720</x>
    <y>95</y>
    <w>100</w>
    <h>50</h>
@@ -292,11 +292,18 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   
   <instrument include="../Instruments/throttle-quadrant.xml">
   <name>Throttle quadrant</name>
-  <x>700</x>
+  <x>720</x>
   <y>35</y>
   </instrument>
 
-  <instrument include="../Instruments/flap.xml">
+<instrument include="../Instruments/gear.xml">
+  <name>gear</name>
+  <x>620</x>
+  <y>55</y>
+  </instrument> 
+
+
+ <instrument include="../Instruments/flap.xml">
    <name>Flaps Control</name>
    <x>845</x>
    <y>50</y>
