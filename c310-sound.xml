@@ -4,24 +4,51 @@
 
  <fx>
  
+  <!-- engine 1 -->
+
   <crank>
-   <name>crank1</name>
-   <path>Sounds/cranking.wav</path>
+   <name>engstart1</name>
+   <path>Sounds/engstart.wav</path>
    <property>/engines/engine[0]/cranking</property>
    <volume>
-    <offset>0.5</offset>
+    <offset>0.4</offset>
    </volume>
   </crank>
 
   <crank>
-   <name>crank2</name>
+   <name>crank1</name>
    <path>Sounds/cranking.wav</path>
-   <property>/engines/engine[1]/cranking</property>
+   <property>/engines/engine[0]/cranking</property>
+   <mode>looped</mode>
    <volume>
+    <property>/engines/engine[0]/running</property>
+    <factor>-0.5</factor>
     <offset>0.5</offset>
    </volume>
   </crank>
- 
+
+  <!--
+     - Stop enginge cranking when then engine is running
+     - Note: The name is intentionaly the same as from the previous event.
+    -->
+  <crank>
+   <name>crank1</name>
+   <property>/engines/engine[0]/running</property>
+   <type>inverted</type>
+   <volume>
+    <property>/engines/engine[0]/running</property>
+   </volume>
+  </crank>
+
+  <crank>
+   <name>cough1</name>
+   <path>Sounds/coughing.wav</path>
+   <property>/engines/engine[0]/running</property>
+   <volume>
+    <offset>0.3</offset>
+   </volume>
+  </crank>
+
   <engine>
    <name>engine1</name>
    <path>Sounds/wasp.wav</path>
@@ -43,6 +70,51 @@
    </pitch>
   </engine>
 
+  <!-- Engine 2 -->
+
+  <crank>
+   <name>engstart2</name>
+   <path>Sounds/engstart.wav</path>
+   <property>/engines/engine[1]/cranking</property>
+   <volume>
+    <offset>0.4</offset>
+   </volume>
+  </crank>
+
+  <crank>
+   <name>crank2</name>
+   <path>Sounds/cranking.wav</path>
+   <property>/engines/engine[1]/cranking</property>
+   <mode>looped</mode>
+   <volume>
+    <property>/engines/engine[1]/running</property>
+    <factor>-0.5</factor>
+    <offset>0.5</offset>
+   </volume>
+  </crank>
+
+    <!--
+     - Stop enginge cranking when then engine is running
+     - Note: The name is intentionaly the same as from the previous event.
+    -->
+  <crank>
+   <name>crank2</name>
+   <property>/engines/engine[1]/running</property>
+   <type>inverted</type>
+   <volume>
+    <property>/engines/engine[1]/running</property>
+   </volume>
+  </crank>
+
+  <crank>
+   <name>cough2</name>
+   <path>Sounds/coughing.wav</path>
+   <property>/engines/engine[1]/running</property>
+   <volume>
+    <offset>0.3</offset>
+   </volume>
+  </crank>
+ 
   <engine>
    <name>engine2</name>
    <path>Sounds/wasp.wav</path>
@@ -72,22 +144,10 @@
    <volume>
     <property>/velocities/airspeed-kt</property>
     <type>log</type>
-    <factor>0.23</factor>
+    <factor>0.15</factor>
    </volume>
-   <volume>
-    <property>/gear/gear[0]/wow</property>
-   </volume>
-   <volume>
-    <property>/gear/gear[1]/wow</property>
-   </volume>
-   <volume>
-    <property>/gear/gear[2]/wow</property>
-   </volume>
-   <pitch>
-    <offset>1.0</offset>
-   </pitch>
   </rumble>
- 
+
   <gear>
    <name>gear-down</name>
    <path>Sounds/gear-dn.wav</path>
@@ -162,36 +222,36 @@
   <flap>
    <name>flaps</name>
    <path>Sounds/flaps.wav</path>
-   <property>/controls/flaps</property>
-   <factor>1e17</factor>
+   <property>/surface-positions/flap-pos-norm</property>
+   <offset>0.999</offset>
    <type>flipflop</type>
    <volume>
     <offset>0.25</offset>
    </volume>
   </flap>
- 
+
   <flap>
    <name>flaps</name>
    <path>Sounds/flaps.wav</path>
-   <property>/controls/flaps</property>
-   <factor>3.0</factor>
+   <property>/surface-positions/flap-pos-norm</property>
+   <offset>0.659</offset>
    <type>flipflop</type>
    <volume>
     <offset>0.25</offset>
    </volume>
   </flap>
- 
-   <flap>
+
+  <flap>
    <name>flaps</name>
    <path>Sounds/flaps.wav</path>
-   <property>/controls/flaps</property>
-   <factor>1.5</factor>
+   <property>/surface-positions/flap-pos-norm</property>
+   <offset>0.319</offset>
    <type>flipflop</type>
    <volume>
     <offset>0.25</offset>
    </volume>
   </flap>
- 
+
   <wind>
    <name>wind</name>
    <mode>looped</mode>
