@@ -20,6 +20,10 @@ Common configuration for all C310 models.
    <path>Aircraft/c310/c310-sound.xml</path>
   </sound>
 
+  <hud>
+   <enable3d>false</enable3d>
+  </hud>
+
  </sim>
 
  <controls>
