@@ -112,64 +112,6 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- end sacred six -->
 
-<!-- engine guage cluster -->  
-<!--
-
--->
-<!--
-<instrument include="..Instruments/vacamp.xml">
-   <name>Vacuum Pressure Gauge</name>
-   <x>177</x>
-   <y>580</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
-
-  <instrument include="..Instruments/oil.xml">
-   <name>Oil Gauge</name>
-   <x>100</x>
-   <y>510</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
-  <instrument include="..Instruments/egt.xml">
-   <name>Exhaust Gas Temperature Gauge</name>
-   <x>100</x>
-   <y>440</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
--->  
-
-<!-- end engine gauges cluster -->
-<!-- engine 2 cluster -->
-<!--
-<instrument include="..Instruments/egt.xml">
-   <name>Exhaust Gas Temperature Gauge 2</name>
-   <params>
-    <engine-egt-select>/engines/engine[1]/egt-degf</engine-egt-select>
-    <engine-fuel-flow-select>/engines/engine[1]/fuel-flow-gph</engine-fuel-flow-select>
-   </params>
-   <x>177</x>
-   <y>442</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
-
-  <instrument include="..Instruments/oil.xml">
-   <name>Oil Gauge 2</name>
-   <params>
-    <engine-oil-press-select>/engines/engine[1]/oil-pressure-psi</engine-oil-press-select>
-    <engine-oil-temp-select>/engines/engine[1]/oil-temperature-degf</engine-oil-temp-select>
-   </params>
-   <x>177</x>
-   <y>510</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
-  -->
-<!--end engines 2 -->
-
 <!-- engine gauges cluster -->  
   <instrument include="../Instruments/dual-manifold-pressure.xml">
    <name>Manifold Pressure Gauge</name>
@@ -183,6 +125,14 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <name>RPM Gauge</name>
    <x>942</x>
    <y>225</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+  
+  <instrument include="../Instruments/egt-dual.xml">
+   <name>Dual EGT Gauge</name>
+   <x>942</x>
+   <y>99</y>
    <w>120</w>
    <h>120</h>
   </instrument>
