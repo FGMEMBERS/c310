@@ -12,7 +12,7 @@
    <position>
     <x>-2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <offset>0.4</offset>
@@ -32,7 +32,7 @@
    <position>
     <x>-2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <offset>0.5</offset>
@@ -46,7 +46,7 @@
    <position>
     <x>-2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <offset>0.3</offset>
@@ -61,7 +61,7 @@
    <position>
     <x>-2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <property>/engines/engine[0]/mp-osi</property>
@@ -88,7 +88,7 @@
    <position>
     <x>2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <offset>0.4</offset>
@@ -108,7 +108,7 @@
    <position>
     <x>2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <offset>0.5</offset>
@@ -122,7 +122,7 @@
    <position>
     <x>2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <offset>0.0</offset>
@@ -137,7 +137,7 @@
    <position>
     <x>2.0</x>
     <y>0.0</y>
-    <z>0.0</z>
+    <z>-2.0</z>
    </position>
    <volume>
     <property>/engines/engine[1]/mp-osi</property>
@@ -183,6 +183,8 @@
     <offset>1.0</offset>
     <factor>-0.001</factor>
    </pitch>
+   <reference-dist>10.0</reference-dist>
+   <max-dist>20.0</max-dist>
   </gear>
  
   <gear>
@@ -194,6 +196,8 @@
      <value>0</value>
     </equals>
    </condition>
+   <reference-dist>10.0</reference-dist>
+   <max-dist>20.0</max-dist>
   </gear>
 
   <squeal>
@@ -234,6 +238,8 @@
    <volume>
     <factor>0.15</factor>
    </volume>
+   <reference-dist>10.0</reference-dist>
+   <max-dist>20.0</max-dist>
   </flap>
 
   <wind>
@@ -269,6 +275,8 @@
     <property>/velocities/airspeed-kt</property>
     <min>30.0</min>
    </volume>
+   <reference-dist>10.0</reference-dist>
+   <max-dist>20.0</max-dist>
   </stall>
  
 <!-- no binding yet?
