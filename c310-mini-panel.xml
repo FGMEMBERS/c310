@@ -35,7 +35,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <PropertyList>
 
  <name>Cessna C310 Mini Panel</name>
- <background>Aircraft/c172/Panels/Textures/panel-trans-mini-bg.rgb</background>
+ <background>Aircraft/Instruments/Textures/panel-trans-mini-bg.rgb</background>
  <w>1024</w>
  <h>140</h>
  <y-offset>-218</y-offset>
@@ -61,7 +61,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>40</h>
   </instrument>
   
-  <instrument include="../c172/Instruments/flap.xml">
+  <instrument include="../Instruments/flap.xml">
    <name>Flaps Control</name>
    <x>1000</x>
    <y>50</y>
@@ -74,7 +74,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- controls visual feedback cluster --> 
 
 
-  <instrument include="../c172/Instruments/brakes.xml">
+  <instrument include="../Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>390</x>
    <y>115</y>
@@ -90,7 +90,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>14</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/controls.xml">
+  <instrument include="../Instruments/controls.xml">
    <name>Control Position Indicators</name>
    <x>410</x>
    <y>60</y>
@@ -110,7 +110,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/horizon.xml">
+  <instrument include="../Instruments/attitude-indicator.xml">
    <name>Attitude Gyro</name>
    <x>305</x>
    <y>65</y>
@@ -118,7 +118,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/altimeter.xml">
+  <instrument include="../Instruments/altimeter.xml">
    <name>Altimeter</name>
    <x>638</x>
    <y>65</y>
@@ -126,7 +126,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/turn.xml">
+  <instrument include="../Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>185</x>
    <y>65</y>
@@ -134,7 +134,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/hsi.xml">
+  <instrument include="../Instruments/hsi.xml">
    <name>Horizontal Situation Indicator</name>
    <x>515</x>
    <y>65</y>
@@ -142,7 +142,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/vertical.xml">
+  <instrument include="../Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
    <x>761</x>
    <y>65</y>
@@ -153,7 +153,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- end sacred six -->
 
 
-  <instrument include="../c172/Instruments/magcompass.xml">
+  <instrument include="../Instruments/magcompass.xml">
    <name>Magnetic Compass</name>
    <x>768</x>
    <y>155</y>

@@ -43,7 +43,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <instruments>
 
-  <instrument include="../c172/Instruments/dme.xml">
+  <instrument include="../Instruments/dme.xml">
    <name>DME Display</name>
    <x>140</x>
    <y>200</y>
@@ -51,7 +51,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>50</h>
   </instrument>
 
- <instrument include="../c172/Instruments/clock.xml">
+ <instrument include="../Instruments/clock.xml">
    <name>Chronometer</name>
    <x>157</x>
    <y>300</y>
@@ -69,7 +69,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
   
-  <instrument include="../c172/Instruments/turn.xml">
+  <instrument include="../Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>260</x>
    <y>225</y>
@@ -77,7 +77,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/horizon.xml">
+  <instrument include="../Instruments/attitude-indicator.xml">
    <name>Attitude Indicator</name>
    <x>400</x>
    <y>352</y>
@@ -85,7 +85,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/altimeter.xml">
+  <instrument include="../Instruments/altimeter.xml">
    <name>Altimeter</name>
    <x>540</x>
    <y>352</y>
@@ -94,7 +94,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <instrument include="../c172/Instruments/hsi.xml">
+  <instrument include="../Instruments/hsi.xml">
    <name>Horizontal Situation Indicator</name>
    <x>400</x>
    <y>225</y>
@@ -102,7 +102,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/vertical.xml">
+  <instrument include="../Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
    <x>540</x>
    <y>225</y>
@@ -117,7 +117,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 -->
 <!--
-<instrument include="../c172/Instruments/vacamp.xml">
+<instrument include="..Instruments/vacamp.xml">
    <name>Vacuum Pressure Gauge</name>
    <x>177</x>
    <y>580</y>
@@ -125,14 +125,14 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/oil.xml">
+  <instrument include="..Instruments/oil.xml">
    <name>Oil Gauge</name>
    <x>100</x>
    <y>510</y>
    <w>70</w>
    <h>70</h>
   </instrument>
-  <instrument include="../c172/Instruments/egt.xml">
+  <instrument include="..Instruments/egt.xml">
    <name>Exhaust Gas Temperature Gauge</name>
    <x>100</x>
    <y>440</y>
@@ -144,7 +144,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- end engine gauges cluster -->
 <!-- engine 2 cluster -->
 <!--
-<instrument include="../c172/Instruments/egt.xml">
+<instrument include="..Instruments/egt.xml">
    <name>Exhaust Gas Temperature Gauge 2</name>
    <params>
     <engine-egt-select>/engines/engine[1]/egt-degf</engine-egt-select>
@@ -156,7 +156,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/oil.xml">
+  <instrument include="..Instruments/oil.xml">
    <name>Oil Gauge 2</name>
    <params>
     <engine-oil-press-select>/engines/engine[1]/oil-pressure-psi</engine-oil-press-select>
@@ -187,7 +187,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/fuel.xml">
+  <instrument include="../Instruments/fuel.xml">
    <name>Fuel Gauge</name>
    <x>540</x>
    <y>99</y>
@@ -209,7 +209,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>17</h>
   </instrument>
   
-  <instrument include="../c172/Instruments/brakes.xml">
+  <instrument include="../Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>400</x>
    <y>140</y>
@@ -217,7 +217,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>17</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/controls.xml">
+  <instrument include="../Instruments/controls.xml">
    <name>Control Position Indicators</name>
    <x>400</x>
    <y>80</y>
@@ -233,7 +233,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- radio nav instruments  -->
 
 <!--
-<instrument include="../c172/Instruments/nav1.xml">
+<instrument include="..Instruments/nav1.xml">
    <name>VOR 1 Gauge</name>
    <x>275</x>
    <y>379</y>
@@ -241,7 +241,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 -->
-  <instrument include="../c172/Instruments/nav1.xml">
+  <instrument include="../Instruments/nav1.xml">
    <name>VOR 2 Gauge</name>
    <params>
     <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag> -->
@@ -259,9 +259,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <instrument include="../c172/Instruments/adf.xml">
+  <instrument include="../Instruments/adf.xml">
    <name>ADF Gauge</name>
-   <x>117</x>
+   <x>130</x>
    <y>99</y>
    <w>120</w>
    <h>120</h>
@@ -273,7 +273,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- radio stack -->
 
   
-  <instrument include="../c172/Instruments/markerbeacon.xml">
+  <instrument include="../Instruments/markerbeacon.xml">
    <name>Marker Beacon Indicators</name>
    <x>658</x>
    <y>405</y>
@@ -302,13 +302,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>262</y>
   </instrument>
   
-  <instrument include="../c172/Instruments/adf-radio.xml">
+  <instrument include="../Instruments/adf-radio.xml">
    <name>ADF Radio</name>
    <x>750</x>
    <y>185</y>
   </instrument>
 
-  <instrument include="../c172/Instruments/autopilot.xml">
+  <instrument include="../Instruments/autopilot.xml">
    <name>Autopilot</name>
    <x>750</x>
    <y>135</y>
@@ -316,7 +316,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- end radio stack -->
   
-  <instrument include="../Instruments/magneto-switch.xml">
+  <instrument include="../Instruments/twin-magneto-switch.xml">
    <name>Magneto switch panel</name>
    <x>700</x>
    <y>95</y>
@@ -330,13 +330,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <y>35</y>
   </instrument>
 
-  <instrument include="../c172/Instruments/flap.xml">
+  <instrument include="../Instruments/flap.xml">
    <name>Flaps Control</name>
    <x>845</x>
    <y>50</y>
   </instrument>
 
-  <instrument include="../c172/Instruments/magcompass.xml">
+  <instrument include="../Instruments/magcompass.xml">
    <name>Magnetic Compass</name>
    <x>668</x>
    <y>480</y>
