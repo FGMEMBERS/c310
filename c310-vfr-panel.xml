@@ -202,7 +202,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../c172/Instruments/magneto-switch.xml">
    <name>Magneto switch panel 2</name>
    <params>
-    <magneto-select>/controls/magneto[1]</magneto-select>
+    <magneto-select>/controls/magnetos[1]</magneto-select>
     <starter-select>/controls/starter[1]</starter-select>
    </params>
    <x>137</x>
