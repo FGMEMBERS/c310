@@ -38,13 +38,126 @@
 
  <animation>
   <type>rotate</type>
+  <object-name>NoseWheel</object-name>
+  <property>/surface-positions/rudder-pos-norm</property>
+  <factor>35</factor>
+  <center>
+   <x-m>-2.28</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.65</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NoseWheel</object-name>
+  <property>/gear/gear[0]/position-norm</property>
+  <factor>120</factor>
+  <offset>-1</offset>
+  <min>-90</min>
+  <max>0</max>
+  <center>
+   <x-m>-2.28</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.65</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftNoseWheelDoor</object-name>
+  <property>/gear/gear[0]/position-norm</property>
+  <factor>-360</factor>
+  <offset>-0.25</offset>
+  <min>0</min>
+  <max>90</max>
+  <center>
+   <x-m>-1.58</x-m>
+   <y-m>-0.17</y-m>
+   <z-m>-0.85</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightNoseWheelDoor</object-name>
+  <property>/gear/gear[0]/position-norm</property>
+  <factor>360</factor>
+  <offset>-0.25</offset>
+  <min>-90</min>
+  <max>0</max>
+  <center>
+   <x-m>-1.58</x-m>
+   <y-m>0.17</y-m>
+   <z-m>-0.85</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>-.05</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftWheel</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-80</factor>
+  <offset>-1</offset>
+  <center>
+   <x-m>0.2</x-m>
+   <y-m>-1.8</y-m>
+   <z-m>-0.65</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightWheel</object-name>
+  <property>/gear/gear[2]/position-norm</property>
+  <factor>80</factor>
+  <offset>-1</offset>
+  <center>
+   <x-m>0.2</x-m>
+   <y-m>1.8</y-m>
+   <z-m>-0.65</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
   <object-name>Rudder</object-name>
-  <property>/controls/rudder</property>
-  <factor>25</factor> <!-- check -->
+  <property>/surface-positions/rudder-pos-norm</property>
+  <factor>-25</factor> <!-- check -->
   <center>
    <x-m>5.5</x-m>
    <y-m>0</y-m>
-   <z-m>1.5</z-m>
+   <z-m>0.5</z-m>
   </center>
   <axis>
    <x>0.5</x>
@@ -57,12 +170,12 @@
   <type>rotate</type>
   <object-name>LeftOuterFlap</object-name>
   <object-name>LeftInnerFlap</object-name>
-  <property>/controls/flaps</property>
+  <property>/surface-positions/flap-pos-norm</property>
   <factor>30</factor> <!-- check -->
   <center>
    <x-m>0.4</x-m>
    <y-m>0</y-m>
-   <z-m>0</z-m>
+   <z-m>-0.78</z-m>
   </center>
   <axis>
    <x>-0.05</x>
@@ -75,12 +188,12 @@
   <type>rotate</type>
   <object-name>RightInnerFlap</object-name>
   <object-name>RightOuterFlap</object-name>
-  <property>/controls/flaps</property>
+  <property>/surface-positions/flap-pos-norm</property>
   <factor>30</factor> <!-- check -->
   <center>
    <x-m>0.4</x-m>
    <y-m>0</y-m>
-   <z-m>0</z-m>
+   <z-m>-0.78</z-m>
   </center>
   <axis>
    <x>0.05</x>
@@ -92,12 +205,12 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
-  <property>/controls/aileron</property>
-  <factor>15</factor> <!-- check -->
+  <property>/surface-positions/left-aileron-pos-norm</property>
+  <factor>-15</factor> <!-- check -->
   <center>
    <x-m>0.75</x-m>
    <y-m>-4.0</y-m>
-   <z-m>0.5</z-m>
+   <z-m>-0.4</z-m>
   </center>
   <axis>
    <x>-.08</x>
@@ -109,17 +222,17 @@
  <animation>
   <type>rotate</type>
   <object-name>RightAileron</object-name>
-  <property>/controls/aileron</property>
+  <property>/surface-positions/right-aileron-pos-norm</property>
   <factor>15</factor> <!-- check -->
   <center>
    <x-m>0.75</x-m>
    <y-m>4.0</y-m>
-   <z-m>0.5</z-m>
+   <z-m>-0.4</z-m>
   </center>
   <axis>
    <x>-.08</x>
    <y>1.0</y>
-   <z>-0.2</z>
+   <z>0.2</z>
   </axis>
  </animation>
 
@@ -127,12 +240,12 @@
   <type>rotate</type>
   <object-name>LeftElevator</object-name>
   <object-name>RightElevator</object-name>
-  <property>/controls/elevator</property>
+  <property>/surface-positions/elevator-pos-norm</property>
   <factor>15</factor> <!-- check -->
   <center>
    <x-m>5.1</x-m>
    <y-m>0.0</y-m>
-   <z-m>0.42</z-m>
+   <z-m>-0.47</z-m>
   </center>
   <axis>
    <x>0.0</x>
