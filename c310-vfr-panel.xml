@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+
+<!--
+Cessna 310 panel.
+November 2001
+John Check <j4strngs@rockfish.net>
+_______________________________________________________________________
+
+This is a panel configuration file for the open-source flight
+simulator FlightGear (www.flightgear.org).  The file is an XML-encoded
+FlightGear property list defining the panel's background texture and
+the location (and optionally, size) of the instruments that will
+appear on the panel.
+
+Each instrument is, itself, defined in an XML-encoded property list
+in a separate file.
+
+Co-ordinates are relative to the *bottom* left corner of the screen
+(as in OpenGL).  The total FlightGear window is always considered to
+be 1024x768, whatever its actual display size on the screen.  All
+paths are relative to $FG_ROOT.
+
+Note that the name of the element defining each instrument must be
+different, or else instrument definitions will be overwritten:
+that's not particularly XML-ish, but that's how property lists
+work in FlightGear right now.
+
+Each instrument has its own preferred width and height, but you can
+override those by providing <w>..</w> and <h>..</h> properties with the
+<x>...</x> and <y>...</y> properties.
+-->
+
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<PropertyList>
+
+ <name>Cessna C310 VFR Panel</name>
+ <background>Aircraft/c172/Panels/Textures/panel-bg.rgb</background>
+ <w>1024</w>
+ <h>768</h>
+ <y-offset>-305</y-offset>
+ <view-height>195</view-height>
+
+ <instruments>
+
+
+<!-- engine guage cluster -->  
+  <instrument include="../c172/Instruments/clock.xml">
+   <name>Chronometer</name>
+   <x>177</x>
+   <y>655</y>
+   <w>70</w>
+   <h>70</h>
+  </instrument>
+
+
+  <instrument include="../c172/Instruments/fuel.xml">
+   <name>Fuel Gauge</name>
+   <x>100</x>
+   <y>580</y>
+   <w>70</w>
+   <h>70</h>
+  </instrument>
+  <instrument include="../c172/Instruments/vacamp.xml">
+   <name>Vacuum Pressure Gauge</name>
+   <x>177</x>
+   <y>580</y>
+   <w>70</w>
+   <h>70</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/oil.xml">
+   <name>Oil Gauge</name>
+   <x>100</x>
+   <y>510</y>
+   <w>70</w>
+   <h>70</h>
+  </instrument>
+  <instrument include="../c172/Instruments/egt.xml">
+   <name>Exhaust Gas Temperature Gauge</name>
+   <x>100</x>
+   <y>440</y>
+   <w>70</w>
+   <h>70</h>
+  </instrument>
+  
+  <instrument include="../c172/Instruments/manifold-press.xml">
+   <name>Manifold Pressure Gauge</name>
+   <w>80</w>
+   <h>80</h>
+   <x>265</x>
+   <y>379</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+<!-- end engine gauges cluster -->
+<!-- engine 2 cluster -->
+  <instrument include="../c172/Instruments/egt.xml">
+   <name>Exhaust Gas Temperature Gauge 2</name>
+   <params>
+    <engine-egt-select>/engines/engine[1]/egt-degf</engine-egt-select>
+    <engine-fuel-flow-select>/engines/engine[1]/fuel-flow-gph</engine-fuel-flow-select>
+   </params>
+   <x>177</x>
+   <y>442</y>
+   <w>70</w>
+   <h>70</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/oil.xml">
+   <name>Oil Gauge 2</name>
+   <params>
+    <engine-oil-press-select>/engines/engine[1]/oil-pressure-psi</engine-oil-press-select>
+    <engine-oil-temp-select>/engines/engine[1]/oil-temperature-degf</engine-oil-temp-select>
+   </params>
+   <x>177</x>
+   <y>510</y>
+   <w>70</w>
+   <h>70</h>
+  </instrument>
+  
+  <instrument include="../c172/Instruments/manifold-press.xml">
+   <name>Manifold Pressure Gauge 2</name>
+   <params>
+    <mp-select>/engines/engine[1]/mp-osi</mp-select>
+   </params>
+   <w>80</w>
+   <h>80</h>
+   <x>495</x>
+   <y>379</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+<!--end engines 2 -->
+
+<!-- engine controls cluster -->  
+ 
+  <instrument include="../c172/Instruments/rpm.xml">
+   <name>RPM Gauge 1</name>
+   <w>80</w>
+   <h>80</h>
+   <x>342</x>
+   <y>379</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/rpm.xml">
+   <name>RPM Gauge 2</name>
+   <params>
+    <rpm-select>/engines/engine[1]/rpm</rpm-select>
+   </params>
+   <w>80</w>
+   <h>80</h>
+   <x>575</x>
+   <y>379</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/throttle-knob.xml">
+   <name>Throttle Knob 1</name>
+   <w>50</w>
+   <x>765</x>
+   <y>360</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/throttle-knob.xml">
+   <name>Throttle Knob 2</name>
+   <params>
+    <engine-throttle-select>/controls/throttle[1]</engine-throttle-select>
+   </params>
+   <w>50</w>
+   <x>815</x>
+   <y>360</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/mixture-knob.xml">
+   <name>Fuel Mixture Knob 1</name>
+   <w>50</w>
+   <x>865</x>
+   <y>360</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/mixture-knob.xml">
+   <name>Fuel Mixture Knob 2</name>
+   <params>
+    <engine-mixture-select>/controls/mixture[1]</engine-mixture-select>
+   </params>
+   <w>50</w>
+   <x>920</x>
+   <y>360</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/magneto-switch.xml">
+   <name>Magneto switch panel 1</name>
+   <x>137</x>
+   <y>382</y>
+   <h>50</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/magneto-switch.xml">
+   <name>Magneto switch panel 2</name>
+   <params>
+    <magneto-select>/controls/magneto[1]</magneto-select>
+    <starter-select>/controls/starter[1]</starter-select>
+   </params>
+   <x>137</x>
+   <y>333</y>
+   <h>50</h>
+  </instrument>
+
+<!-- end engine controls cluster -->
+  
+<!-- controls visual feedback cluster -->  
+
+  <instrument include="../c172/Instruments/flap.xml">
+   <name>Flaps Control</name>
+   <x>975</x>
+   <y>365</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/brakes.xml">
+   <name>Brake Indicator Light</name>
+   <x>412</x>
+   <y>430</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/controls.xml">
+   <name>Control Position Indicators</name>
+   <x>412</x>
+   <y>370</y>
+   <w>90</w>
+   <h>90</h>
+  </instrument>
+
+<!-- end controls visual feedback cluster -->
+
+<!-- sacred six -->
+
+  <instrument include="../c172/Instruments/asi.xml">
+   <name>Airspeed Indicator</name>
+   <x>279</x>
+   <y>645</y>
+   <w>128</w>
+   <h>128</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/horizon.xml">
+   <name>Attitude Gyro</name>
+   <x>412</x>
+   <y>645</y>
+   <w>128</w>
+   <h>128</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/altimeter.xml">
+   <name>Altimeter</name>
+   <x>542</x>
+   <y>645</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/turn.xml">
+   <name>Turn Coordinator</name>
+   <x>279</x>
+   <y>512</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/gyro.xml">
+   <name>Directional Gyro</name>
+   <x>412</x>
+   <y>512</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/vertical.xml">
+   <name>Vertical Velocity Indicator</name>
+   <x>542</x>
+   <y>512</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+<!-- end sacred six -->
+
+
+
+<!-- radio nav instruments  -->
+
+  <instrument include="../c172/Instruments/nav1.xml">
+   <name>VOR 1 Gauge</name>
+   <x>675</x>
+   <y>645</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/nav1.xml">
+   <name>VOR 2 Gauge</name>
+   <params>
+    <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag> -->
+    <nav-from-flag>/radios/nav[1]/from-flag</nav-from-flag> -->
+    <nav-radial-selected>/radios/nav[1]/radials/selected-deg</nav-radial-selected>
+    <nav-gs-needle-deflection>/radios/nav[1]/gs-needle-deflection</nav-gs-needle-deflection>
+    <nav-heading-needle-deflection>/radios/nav[1]/heading-needle-deflection</nav-heading-needle-deflection>
+    <nav-has-gs-needle>/sim/instrument-options/nav[1]/has-gs-needle</nav-has-gs-needle>
+    <nav-needles-pivot>/sim/instrument-options/nav[1]/needles-pivot</nav-needles-pivot>
+   </params>
+   <x>675</x>
+   <y>512</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+
+  <instrument include="../c172/Instruments/adf.xml">
+   <name>ADF Gauge</name>
+   <x>675</x>
+   <y>379</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+<!-- end radio nav instruments -->
+
+
+<!-- radio stack -->
+
+  <instrument include="../c172/Instruments/dme.xml">
+   <name>DME Display</name>
+   <x>880</x>
+   <y>671</y>
+  </instrument>
+  
+  <instrument include="../c172/Instruments/markerbeacon.xml">
+   <name>Marker Beacon Indicators</name>
+   <x>786</x>
+   <y>651</y>
+   </instrument>
+      
+  <instrument include="../c172/Instruments/navcom-radio.xml">
+   <name>NavCom 1 Radio</name>
+   <x>880</x>
+   <y>607</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/navcom-radio.xml">
+   <name>NavCom 2 Radio</name>
+   <params>
+    <comm-freq-selected-prop>/radios/comm2/frequencies/selected</comm-freq-selected-prop>
+    <comm-freq-standby-prop>/radios/comm2/frequencies/standby</comm-freq-standby-prop>
+    <nav-freq-selected-prop>/radios/nav[1]/frequencies/selected-mhz</nav-freq-selected-prop>
+    <nav-freq-standby-prop>/radios/nav[1]/frequencies/standby-mhz</nav-freq-standby-prop>
+    <nav-morse-id-volume-prop>/radios/nav[1]/volume</nav-morse-id-volume-prop>
+    <nav-morse-ident-toggle-prop>/radios/nav[1]/ident</nav-morse-ident-toggle-prop>
+   </params>
+   <x>880</x>
+   <y>542</y>
+  </instrument>
+  
+  <instrument include="../c172/Instruments/adf-radio.xml">
+   <name>ADF Radio</name>
+   <x>880</x>
+   <y>479</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/autopilot.xml">
+   <name>Autopilot</name>
+   <x>880</x>
+   <y>431</y>
+  </instrument>
+
+<!-- end radio stack -->
+
+  <instrument include="../c172/Instruments/magcompass.xml">
+   <name>Magnetic Compass</name>
+   <x>768</x>
+   <y>782</y>
+  </instrument>
+ </instruments>
+
+</PropertyList>
