@@ -46,7 +46,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <multibackground>Aircraft/c310/c310-panel-12.rgb</multibackground>
  <w>1424</w>
  <h>468</h>
- <y-offset>-305</y-offset>
+ <y-offset>0</y-offset>
  <view-height>440</view-height>
 
  <instruments>
