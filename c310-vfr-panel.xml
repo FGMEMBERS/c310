@@ -157,32 +157,32 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <w>120</w>
    <h>120</h>
   </instrument>
-
-  <instrument include="../c172/Instruments/throttle-knob.xml">
+<!--
+  <instrument include="Instruments/throttle-knob.xml">
    <name>Throttle Knob 1</name>
-   <w>50</w>
+   <w>30</w>
    <h>50</h>
-   <x>775</x>
-   <y>390</y>
+   <x>757</x>
+   <y>355</y>
   </instrument>
 
-  <instrument include="../c172/Instruments/throttle-knob.xml">
+  <instrument include="Instruments/throttle-knob.xml">
    <name>Throttle Knob 2</name>
    <params>
     <engine-throttle-select>/controls/throttle[1]</engine-throttle-select>
    </params>
-   <w>50</w>
+   <w>30</w>
    <h>50</h>
-   <x>775</x>
-   <y>340</y>
+   <x>788</x>
+   <y>355</y>
   </instrument>
 
   <instrument include="Instruments/prop-advance.xml">
    <name>Prop Advance Knob 1</name>
-   <w>50</w>
+   <w>30</w>
    <h>50</h>
-   <x>845</x>
-   <y>390</y>
+   <x>827</x>
+   <y>355</y>
   </instrument>
 
   <instrument include="Instruments/prop-advance.xml">
@@ -190,31 +190,38 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <params>
     <prop-advance-select>/controls/propeller-pitch[1]</prop-advance-select>
    </params>
-   <w>50</w>
+   <w>30</w>
    <h>50</h>
-   <x>845</x>
-   <y>340</y>
+   <x>858</x>
+   <y>355</y>
   </instrument>
 
-  <instrument include="../c172/Instruments/mixture-knob.xml">
+  <instrument include="Instruments/mixture-knob.xml">
    <name>Fuel Mixture Knob 1</name>
-   <w>50</w>
+   <w>30</w>
    <h>50</h>
-   <x>915</x>
-   <y>390</y>
+   <x>897</x>
+   <y>355</y>
   </instrument>
 
-  <instrument include="../c172/Instruments/mixture-knob.xml">
+  <instrument include="Instruments/mixture-knob.xml">
    <name>Fuel Mixture Knob 2</name>
    <params>
     <engine-mixture-select>/controls/mixture[1]</engine-mixture-select>
    </params>
-   <w>50</w>
+   <w>30</w>
    <h>50</h>
-   <x>915</x>
-   <y>340</y>
+   <x>928</x>
+   <y>355</y>
   </instrument>
-
+-->
+  
+  <instrument include="Instruments/throttle-quadrant.xml">
+  <name>Throttle quadrant</name>
+  <x>850</x>
+  <y>355</y>
+  </instrument>
+  
   <instrument include="Instruments/magneto-switch.xml">
    <name>Magneto switch panel</name>
    <x>137</x>

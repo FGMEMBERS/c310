@@ -52,7 +52,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <w>120</w>
    <h>120</h>
   </instrument>
-
+<!--
   <instrument include="../c172/Instruments/mixture-knob.xml">
    <name>Fuel Mixture Knob</name>
    <x>980</x>
@@ -60,7 +60,14 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <w>45</w>
    <h>55</h>
   </instrument>
-  
+-->
+ <instrument include="Instruments/throttle-quadrant.xml">
+ <x>980</x>
+ <y>420</y>
+ <w>75</w>
+ <h>40</h>
+ </instrument>
+
 <!--  end engine controls cluster -->
   
 <!-- controls visual feedback cluster --> 
