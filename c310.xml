@@ -543,7 +543,7 @@
 
     NOTE that Time is always output with the data.
   -->
-  <OUTPUT NAME="JSBout.csv" TYPE="CSV">
+  <OUTPUT NAME="JSBout310.csv" TYPE="NONE">
     RATE_IN_HZ       10
     SIMULATION       OFF
     ATMOSPHERE       OFF
