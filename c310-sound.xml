@@ -34,7 +34,7 @@
   <crank>
    <name>crank1</name>
    <property>/engines/engine[0]/running</property>
-   <type>inverted</type>
+   <type>fall</type>
    <volume>
     <property>/engines/engine[0]/running</property>
    </volume>
@@ -100,7 +100,7 @@
   <crank>
    <name>crank2</name>
    <property>/engines/engine[1]/running</property>
-   <type>inverted</type>
+   <type>fall</type>
    <volume>
     <property>/engines/engine[1]/running</property>
    </volume>
@@ -174,7 +174,6 @@
    <name>gear-down</name>
    <path>Sounds/gear-dn.wav</path>
    <property>/controls/gear-down</property>
-   <type>level</type>
   </gear>
  
   <gear>
