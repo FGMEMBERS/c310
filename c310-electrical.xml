@@ -159,14 +159,14 @@
   <connector>
     <input>Bus Bar</input>
     <output>Starter 1 Power</output>
-    <switch>/controls/starter[0]</switch>
+    <switch>/controls/engines/engine[0]/starter</switch>
     <initial-state>off</initial-state>
   </connector>
 
   <connector>
     <input>Bus Bar</input>
     <output>Starter 2 Power</output>
-    <switch>/controls/starter[1]</switch>
+    <switch>/controls/engines/engine[1]/starter</switch>
     <initial-state>off</initial-state>
   </connector>
 
@@ -187,7 +187,7 @@
   <connector>
     <input>Bus Bar</input>
     <output>Fuel Pump Power</output>
-    <switch>/controls/fuel-pump[0]</switch>
+    <switch>/controls/engines/engine[0]/fuel-pump</switch>
   </connector>
 
   <connector>
