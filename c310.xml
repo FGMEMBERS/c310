@@ -138,7 +138,7 @@
       FEED      0
     </AC_ENGINE>
 
-    <AC_THRUSTER FILE="prop_generic2v">
+    <AC_THRUSTER FILE="propC8v">
       XLOC   48.0
       YLOC   -70.0
       ZLOC   59.4
@@ -148,7 +148,7 @@
       SENSE   1.0
     </AC_THRUSTER>
 
-    <AC_THRUSTER FILE="prop_generic2v">
+    <AC_THRUSTER FILE="propC8v">
       XLOC   48.0
       YLOC   70.0
       ZLOC   59.4
