@@ -43,35 +43,24 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <instruments>
 
-<!-- engine controls cluster --> 
  
-  <instrument include="../c172/Instruments/rpm.xml">
+  <instrument include="../Instruments/tach-2700-redline.xml">
    <name>RPM Gauge</name>
    <x>885</x>
    <y>375</y>
    <w>120</w>
    <h>120</h>
   </instrument>
-<!--
-  <instrument include="../c172/Instruments/mixture-knob.xml">
-   <name>Fuel Mixture Knob</name>
+ 
+<!-- controls cluster --> 
+
+ <instrument include="../Instruments/throttle-quadrant.xml">
    <x>980</x>
    <y>420</y>
-   <w>45</w>
-   <h>55</h>
+   <w>75</w>
+   <h>40</h>
   </instrument>
--->
- <instrument include="Instruments/throttle-quadrant.xml">
- <x>980</x>
- <y>420</y>
- <w>75</w>
- <h>40</h>
- </instrument>
-
-<!--  end engine controls cluster -->
   
-<!-- controls visual feedback cluster --> 
-
   <instrument include="../c172/Instruments/flap.xml">
    <name>Flaps Control</name>
    <x>980</x>
@@ -80,10 +69,25 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
 
+<!--  end  controls cluster -->
+  
+<!-- controls visual feedback cluster --> 
+
+
   <instrument include="../c172/Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
-   <x>410</x>
+   <x>390</x>
    <y>425</y>
+   <w>32</w>
+   <h>15</h>
+  </instrument>
+  
+  <instrument include="../Instruments/gear-indicator.xml">
+   <name>Gear Indicator Light</name>
+   <x>425</x>
+   <y>425</y>
+   <w>32</w>
+   <h>14</h>
   </instrument>
 
   <instrument include="../c172/Instruments/controls.xml">
@@ -98,7 +102,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- sacred six -->
 
-  <instrument include="Instruments/asi.xml">
+  <instrument include="../Instruments/asi-260-knot.xml">
    <name>Airspeed Indicator</name>
    <x>65</x>
    <y>375</y>

@@ -43,25 +43,73 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <instruments>
 
+ <instrument include="../c172/Instruments/clock.xml">
+   <name>Chronometer</name>
+   <x>117</x>
+   <y>520</y>
+   <w>90</w>
+   <h>90</h>
+  </instrument>
+
+<!-- sacred six -->
+
+  <instrument include="../Instruments/asi-260-knot.xml">
+   <name>Airspeed Indicator</name>
+   <x>260</x>
+   <y>645</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+  
+  <instrument include="../c172/Instruments/turn.xml">
+   <name>Turn Coordinator</name>
+   <x>260</x>
+   <y>512</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/horizon.xml">
+   <name>Attitude Indicator</name>
+   <x>400</x>
+   <y>645</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/altimeter.xml">
+   <name>Altimeter</name>
+   <x>540</x>
+   <y>645</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+
+  <instrument include="../c172/Instruments/hsi.xml">
+   <name>Horizontal Situation Indicator</name>
+   <x>400</x>
+   <y>512</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/vertical.xml">
+   <name>Vertical Velocity Indicator</name>
+   <x>540</x>
+   <y>512</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+<!-- end sacred six -->
 
 <!-- engine guage cluster -->  
-  <instrument include="../c172/Instruments/clock.xml">
-   <name>Chronometer</name>
-   <x>177</x>
-   <y>655</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
+<!--
 
-
-  <instrument include="../c172/Instruments/fuel.xml">
-   <name>Fuel Gauge</name>
-   <x>100</x>
-   <y>580</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
-  <instrument include="../c172/Instruments/vacamp.xml">
+-->
+<!--
+<instrument include="../c172/Instruments/vacamp.xml">
    <name>Vacuum Pressure Gauge</name>
    <x>177</x>
    <y>580</y>
@@ -83,19 +131,12 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <w>70</w>
    <h>70</h>
   </instrument>
-  
-  <instrument include="../c172/Instruments/manifold-press.xml">
-   <name>Manifold Pressure Gauge</name>
-   <w>80</w>
-   <h>80</h>
-   <x>265</x>
-   <y>379</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
+-->  
+
 <!-- end engine gauges cluster -->
 <!-- engine 2 cluster -->
-  <instrument include="../c172/Instruments/egt.xml">
+<!--
+<instrument include="../c172/Instruments/egt.xml">
    <name>Exhaust Gas Temperature Gauge 2</name>
    <params>
     <engine-egt-select>/engines/engine[1]/egt-degf</engine-egt-select>
@@ -118,129 +159,43 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <w>70</w>
    <h>70</h>
   </instrument>
-  
-  <instrument include="../c172/Instruments/manifold-press.xml">
-   <name>Manifold Pressure Gauge 2</name>
-   <params>
-    <mp-select>/engines/engine[1]/mp-osi</mp-select>
-   </params>
-   <w>80</w>
-   <h>80</h>
-   <x>495</x>
-   <y>379</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
+  -->
 <!--end engines 2 -->
 
-<!-- engine controls cluster -->  
+<!-- engine gauges cluster -->  
+  <instrument include="../Instruments/manifold-press.xml">
+   <name>Manifold Pressure Gauge</name>
+   <x>942</x>
+   <y>645</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
  
-  <instrument include="../c172/Instruments/rpm.xml">
-   <name>RPM Gauge 1</name>
-   <w>80</w>
-   <h>80</h>
-   <x>342</x>
-   <y>379</y>
+  <instrument include="../Instruments/tach-2700-redline.xml">
+   <name>RPM Gauge</name>
+   <x>942</x>
+   <y>512</y>
    <w>120</w>
    <h>120</h>
   </instrument>
 
-  <instrument include="../c172/Instruments/rpm.xml">
-   <name>RPM Gauge 2</name>
-   <params>
-    <rpm-select>/engines/engine[1]/rpm</rpm-select>
-   </params>
-   <w>80</w>
-   <h>80</h>
-   <x>575</x>
+  <instrument include="../c172/Instruments/fuel.xml">
+   <name>Fuel Gauge</name>
+   <x>540</x>
    <y>379</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
-<!--
-  <instrument include="Instruments/throttle-knob.xml">
-   <name>Throttle Knob 1</name>
-   <w>30</w>
-   <h>50</h>
-   <x>757</x>
-   <y>355</y>
-  </instrument>
-
-  <instrument include="Instruments/throttle-knob.xml">
-   <name>Throttle Knob 2</name>
-   <params>
-    <engine-throttle-select>/controls/throttle[1]</engine-throttle-select>
-   </params>
-   <w>30</w>
-   <h>50</h>
-   <x>788</x>
-   <y>355</y>
-  </instrument>
-
-  <instrument include="Instruments/prop-advance.xml">
-   <name>Prop Advance Knob 1</name>
-   <w>30</w>
-   <h>50</h>
-   <x>827</x>
-   <y>355</y>
-  </instrument>
-
-  <instrument include="Instruments/prop-advance.xml">
-   <name>Prop Advance 2</name>
-   <params>
-    <prop-advance-select>/controls/propeller-pitch[1]</prop-advance-select>
-   </params>
-   <w>30</w>
-   <h>50</h>
-   <x>858</x>
-   <y>355</y>
-  </instrument>
-
-  <instrument include="Instruments/mixture-knob.xml">
-   <name>Fuel Mixture Knob 1</name>
-   <w>30</w>
-   <h>50</h>
-   <x>897</x>
-   <y>355</y>
-  </instrument>
-
-  <instrument include="Instruments/mixture-knob.xml">
-   <name>Fuel Mixture Knob 2</name>
-   <params>
-    <engine-mixture-select>/controls/mixture[1]</engine-mixture-select>
-   </params>
-   <w>30</w>
-   <h>50</h>
-   <x>928</x>
-   <y>355</y>
-  </instrument>
--->
-  
-  <instrument include="Instruments/throttle-quadrant.xml">
-  <name>Throttle quadrant</name>
-  <x>850</x>
-  <y>355</y>
+   <w>115</w>
+   <h>115</h>
   </instrument>
   
-  <instrument include="Instruments/magneto-switch.xml">
-   <name>Magneto switch panel</name>
-   <x>137</x>
-   <y>358</y>
-  </instrument>
+  
 
 <!-- end engine controls cluster -->
   
 <!-- controls visual feedback cluster -->  
 
-  <instrument include="../c172/Instruments/flap.xml">
-   <name>Flaps Control</name>
-   <x>975</x>
-   <y>365</y>
-  </instrument>
-
-  <instrument include="Instruments/gear-indicator.xml">
+  <instrument include="../Instruments/gear-indicator.xml">
    <name>Gear Indicator Light</name>
-   <x>412</x>
+   <x>400</x>
    <y>442</y>
    <w>40</w>
    <h>17</h>
@@ -248,7 +203,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   
   <instrument include="../c172/Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
-   <x>412</x>
+   <x>400</x>
    <y>425</y>
    <w>40</w>
    <h>17</h>
@@ -256,7 +211,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../c172/Instruments/controls.xml">
    <name>Control Position Indicators</name>
-   <x>412</x>
+   <x>400</x>
    <y>370</y>
    <w>90</w>
    <h>90</h>
@@ -264,70 +219,20 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- end controls visual feedback cluster -->
 
-<!-- sacred six -->
-
-  <instrument include="../c310/Instruments/asi.xml">
-   <name>Airspeed Indicator</name>
-   <x>279</x>
-   <y>645</y>
-   <w>128</w>
-   <h>128</h>
-  </instrument>
-
-  <instrument include="../c172/Instruments/horizon.xml">
-   <name>Attitude Gyro</name>
-   <x>412</x>
-   <y>645</y>
-   <w>128</w>
-   <h>128</h>
-  </instrument>
-
-  <instrument include="../c172/Instruments/altimeter.xml">
-   <name>Altimeter</name>
-   <x>542</x>
-   <y>645</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
-
-  <instrument include="../c172/Instruments/turn.xml">
-   <name>Turn Coordinator</name>
-   <x>279</x>
-   <y>512</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
-
-  <instrument include="../c172/Instruments/gyro.xml">
-   <name>Directional Gyro</name>
-   <x>412</x>
-   <y>512</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
-
-  <instrument include="../c172/Instruments/vertical.xml">
-   <name>Vertical Velocity Indicator</name>
-   <x>542</x>
-   <y>512</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
-
-<!-- end sacred six -->
 
 
 
 <!-- radio nav instruments  -->
 
-  <instrument include="../c172/Instruments/nav1.xml">
+<!--
+<instrument include="../c172/Instruments/nav1.xml">
    <name>VOR 1 Gauge</name>
-   <x>675</x>
-   <y>645</y>
+   <x>275</x>
+   <y>379</y>
    <w>120</w>
    <h>120</h>
   </instrument>
-
+-->
   <instrument include="../c172/Instruments/nav1.xml">
    <name>VOR 2 Gauge</name>
    <params>
@@ -339,8 +244,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <nav-has-gs-needle>/sim/instrument-options/nav[1]/has-gs-needle</nav-has-gs-needle>
     <nav-needles-pivot>/sim/instrument-options/nav[1]/needles-pivot</nav-needles-pivot>
    </params>
-   <x>675</x>
-   <y>512</y>
+   <x>260</x>
+   <y>379</y>
    <w>120</w>
    <h>120</h>
   </instrument>
@@ -348,7 +253,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../c172/Instruments/adf.xml">
    <name>ADF Gauge</name>
-   <x>675</x>
+   <x>117</x>
    <y>379</y>
    <w>120</w>
    <h>120</h>
@@ -359,22 +264,27 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- radio stack -->
 
-  <instrument include="../c172/Instruments/dme.xml">
-   <name>DME Display</name>
-   <x>880</x>
-   <y>671</y>
-  </instrument>
-  
   <instrument include="../c172/Instruments/markerbeacon.xml">
    <name>Marker Beacon Indicators</name>
-   <x>786</x>
-   <y>651</y>
+   <x>665</x>
+   <y>690</y>
+   <w>80</w>
+   <h>32</h>
    </instrument>
+
+  <instrument include="../c172/Instruments/dme.xml">
+   <name>DME Display</name>
+   <x>750</x>
+   <y>690</y>
+   <w>90</w>
+   <h>45</h>
+  </instrument>
+  
       
   <instrument include="../c172/Instruments/navcom-radio.xml">
    <name>NavCom 1 Radio</name>
-   <x>880</x>
-   <y>607</y>
+   <x>750</x>
+   <y>635</y>
   </instrument>
 
   <instrument include="../c172/Instruments/navcom-radio.xml">
@@ -387,27 +297,47 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <nav-morse-id-volume-prop>/radios/nav[1]/volume</nav-morse-id-volume-prop>
     <nav-morse-ident-toggle-prop>/radios/nav[1]/ident</nav-morse-ident-toggle-prop>
    </params>
-   <x>880</x>
-   <y>542</y>
+   <x>750</x>
+   <y>570</y>
   </instrument>
   
   <instrument include="../c172/Instruments/adf-radio.xml">
    <name>ADF Radio</name>
-   <x>880</x>
-   <y>479</y>
+   <x>750</x>
+   <y>505</y>
   </instrument>
 
   <instrument include="../c172/Instruments/autopilot.xml">
    <name>Autopilot</name>
-   <x>880</x>
-   <y>431</y>
+   <x>750</x>
+   <y>461</y>
   </instrument>
 
 <!-- end radio stack -->
+  
+  <instrument include="../Instruments/magneto-switch.xml">
+   <name>Magneto switch panel</name>
+   <x>700</x>
+   <y>420</y>
+   <w>100</w>
+   <h>50</h>
+  </instrument>
+  
+  <instrument include="../Instruments/throttle-quadrant.xml">
+  <name>Throttle quadrant</name>
+  <x>700</x>
+  <y>355</y>
+  </instrument>
+
+  <instrument include="../c172/Instruments/flap.xml">
+   <name>Flaps Control</name>
+   <x>845</x>
+   <y>365</y>
+  </instrument>
 
   <instrument include="../c172/Instruments/magcompass.xml">
    <name>Magnetic Compass</name>
-   <x>768</x>
+   <x>668</x>
    <y>782</y>
   </instrument>
  </instruments>
