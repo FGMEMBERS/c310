@@ -161,8 +161,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../c172/Instruments/throttle-knob.xml">
    <name>Throttle Knob 1</name>
    <w>50</w>
-   <x>765</x>
-   <y>360</y>
+   <h>50</h>
+   <x>775</x>
+   <y>390</y>
   </instrument>
 
   <instrument include="../c172/Instruments/throttle-knob.xml">
@@ -171,15 +172,36 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <engine-throttle-select>/controls/throttle[1]</engine-throttle-select>
    </params>
    <w>50</w>
-   <x>815</x>
-   <y>360</y>
+   <h>50</h>
+   <x>775</x>
+   <y>340</y>
+  </instrument>
+
+  <instrument include="Instruments/prop-advance.xml">
+   <name>Prop Advance Knob 1</name>
+   <w>50</w>
+   <h>50</h>
+   <x>845</x>
+   <y>390</y>
+  </instrument>
+
+  <instrument include="Instruments/prop-advance.xml">
+   <name>Prop Advance 2</name>
+   <params>
+    <prop-advance-select>/controls/propeller-pitch[1]</prop-advance-select>
+   </params>
+   <w>50</w>
+   <h>50</h>
+   <x>845</x>
+   <y>340</y>
   </instrument>
 
   <instrument include="../c172/Instruments/mixture-knob.xml">
    <name>Fuel Mixture Knob 1</name>
    <w>50</w>
-   <x>865</x>
-   <y>360</y>
+   <h>50</h>
+   <x>915</x>
+   <y>390</y>
   </instrument>
 
   <instrument include="../c172/Instruments/mixture-knob.xml">
@@ -188,8 +210,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <engine-mixture-select>/controls/mixture[1]</engine-mixture-select>
    </params>
    <w>50</w>
-   <x>920</x>
-   <y>360</y>
+   <h>50</h>
+   <x>915</x>
+   <y>340</y>
   </instrument>
 
   <instrument include="Instruments/magneto-switch.xml">
