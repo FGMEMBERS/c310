@@ -58,7 +58,6 @@
     AC_AERORP      46.0   0.0  8.6
     AC_CGLOC       46.0   0.0  8.6
     AC_EYEPTLOC    35.0 -12.0 38.0
-    AC_ALPHALIMITS -0.087 0.28
 
   </METRICS>
 
@@ -285,6 +284,8 @@
    </FLIGHT_CONTROL>
 
    <AERODYNAMICS>
+
+     AC_ALPHALIMITS -0.087 0.28
 
      <AXIS NAME="LIFT">
 
