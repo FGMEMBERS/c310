@@ -192,22 +192,10 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>360</y>
   </instrument>
 
-  <instrument include="../c172/Instruments/magneto-switch.xml">
-   <name>Magneto switch panel 1</name>
+  <instrument include="Instruments/magneto-switch.xml">
+   <name>Magneto switch panel</name>
    <x>137</x>
-   <y>382</y>
-   <h>50</h>
-  </instrument>
-
-  <instrument include="../c172/Instruments/magneto-switch.xml">
-   <name>Magneto switch panel 2</name>
-   <params>
-    <magneto-select>/controls/magnetos[1]</magneto-select>
-    <starter-select>/controls/starter[1]</starter-select>
-   </params>
-   <x>137</x>
-   <y>333</y>
-   <h>50</h>
+   <y>358</y>
   </instrument>
 
 <!-- end engine controls cluster -->
