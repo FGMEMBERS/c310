@@ -9,6 +9,11 @@
    <name>engstart1</name>
    <path>Sounds/engstart.wav</path>
    <property>/engines/engine[0]/cranking</property>
+   <position>
+    <x>-2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
     <offset>0.4</offset>
    </volume>
@@ -24,8 +29,13 @@
      <property>/engines/engine[0]/running</property>
     </not>
    </condition>
+   <position>
+    <x>-2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
-    <offset>0.5</offset>
+1    <offset>0.5</offset>
    </volume>
   </crank>
 
@@ -33,6 +43,11 @@
    <name>cough1</name>
    <path>Sounds/coughing.wav</path>
    <property>/engines/engine[0]/running</property>
+   <position>
+    <x>-2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
     <offset>0.3</offset>
    </volume>
@@ -43,18 +58,23 @@
    <mode>looped</mode>
    <path>Sounds/wasp.wav</path>
    <property>/engines/engine[0]/running</property>
+   <position>
+    <x>-2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
     <property>/engines/engine[0]/mp-osi</property>
-    <factor>0.005</factor>
+    <factor>0.009</factor>
     <min>0.15</min>
-    <max>0.5</max>
+    <max>0.6</max>
     <offset>0.15</offset>
    </volume>
    <pitch>
     <property>/engines/engine[0]/rpm</property>
-    <factor>0.0012</factor>
-    <min>1.0</min>
-    <max>5.0</max>
+    <factor>0.0004</factor>
+    <min>0.1</min>
+    <max>2.0</max>
     <offset>0.3</offset>
    </pitch>
   </engine>
@@ -65,6 +85,11 @@
    <name>engstart2</name>
    <path>Sounds/engstart.wav</path>
    <property>/engines/engine[1]/cranking</property>
+   <position>
+    <x>2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
     <offset>0.4</offset>
    </volume>
@@ -80,6 +105,11 @@
      <property>/engines/engine[1]/running</property>
     </not>
    </condition>
+   <position>
+    <x>2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
     <offset>0.5</offset>
    </volume>
@@ -89,8 +119,13 @@
    <name>cough2</name>
    <path>Sounds/coughing.wav</path>
    <property>/engines/engine[1]/running</property>
+   <position>
+    <x>2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
-    <offset>0.3</offset>
+    <offset>0.0</offset>
    </volume>
   </crank>
 
@@ -99,22 +134,26 @@
    <mode>looped</mode>
    <path>Sounds/wasp.wav</path>
    <property>/engines/engine[1]/running</property>
+   <position>
+    <x>2.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
    <volume>
     <property>/engines/engine[1]/mp-osi</property>
-    <factor>0.005</factor>
+    <factor>0.009</factor>
     <min>0.15</min>
-    <max>0.5</max>
+    <max>0.6</max>
     <offset>0.15</offset>
    </volume>
    <pitch>
     <property>/engines/engine[1]/rpm</property>
-    <factor>0.0012</factor>
-    <min>1.0</min>
-    <max>5.0</max>
+    <factor>0.0004</factor>
+    <min>0.1</min>
+    <max>2.0</max>
     <offset>0.3</offset>
    </pitch>
   </engine>
-
 
   <rumble>
    <name>rumble</name>
