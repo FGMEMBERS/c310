@@ -76,16 +76,16 @@
 </gear>
 
 <gear x="-4.02" y="1.32" z="-1.35" compression=".5" retract-time="7">
-  <control-input axis="/controls/gear/wheel[0]/brake" control="BRAKE"/>
-  <control-input axis="/controls/gear/parking-brake" control="BRAKE"/>
+  <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-speed control="EXTEND" transition-time="6.2"/>
   <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
 </gear>
 
 <gear x="-4.02" y="-1.32" z="-1.35" compression=".5" retract-time="7">
-  <control-input axis="/controls/gear/wheel[1]/brake" control="BRAKE"/>
-  <control-input axis="/controls/gear/parking-brake" control="BRAKE"/>
+  <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-speed control="EXTEND" transition-time="6"/>
   <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
