@@ -16,7 +16,6 @@ Common configuration for all C310 models.
   </systems>
   
   <sound>
-   <audible>true</audible>
    <path>Aircraft/c310/c310-sound.xml</path>
   </sound>
 
