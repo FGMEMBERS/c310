@@ -84,7 +84,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
   
-  <instrument include="Instruments/manifold-press.xml">
+  <instrument include="../c172/Instruments/manifold-press.xml">
    <name>Manifold Pressure Gauge</name>
    <w>80</w>
    <h>80</h>
@@ -119,15 +119,40 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
   
+  <instrument include="../c172/Instruments/manifold-press.xml">
+   <name>Manifold Pressure Gauge 2</name>
+   <params>
+    <mp-select>/engines/engine[1]/mp-osi</mp-select>
+   </params>
+   <w>80</w>
+   <h>80</h>
+   <x>495</x>
+   <y>379</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
 <!--end engines 2 -->
 
 <!-- engine controls cluster -->  
  
-  <instrument include="Instruments/rpm.xml">
-   <name>RPM Gauge</name>
+  <instrument include="../c172/Instruments/rpm.xml">
+   <name>RPM Gauge 1</name>
    <w>80</w>
    <h>80</h>
    <x>342</x>
+   <y>379</y>
+   <w>120</w>
+   <h>120</h>
+  </instrument>
+
+  <instrument include="../c172/Instruments/rpm.xml">
+   <name>RPM Gauge 2</name>
+   <params>
+    <rpm-select>/engines/engine[1]/rpm</rpm-select>
+   </params>
+   <w>80</w>
+   <h>80</h>
+   <x>575</x>
    <y>379</y>
    <w>120</w>
    <h>120</h>
@@ -177,7 +202,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../c172/Instruments/magneto-switch.xml">
    <name>Magneto switch panel 2</name>
    <params>
-    <magneto-select>/controls/magnetos[1]</magneto-select>
+    <magneto-select>/controls/magneto[1]</magneto-select>
     <starter-select>/controls/starter[1]</starter-select>
    </params>
    <x>137</x>
