@@ -38,7 +38,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <background>Aircraft/Instruments/Textures/panel-trans-mini-bg.rgb</background>
  <w>1024</w>
  <h>140</h>
- <y-offset>-218</y-offset>
+ <y-offset>0</y-offset>
  <view-height>768</view-height>
 
  <instruments>
@@ -161,6 +161,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  </instruments>
 
 </PropertyList>
+
 
 
 
