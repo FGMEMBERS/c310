@@ -23,6 +23,15 @@ Common configuration for all C310 models.
    <enable3d>false</enable3d>
   </hud>
 
+  <help>
+    <title>Cessna C310</title>
+    <line>Maximum cruise speed: 189 KTAS at 8,000 ft</line>
+    <line>Econo-cruise speed: 144 KTAS at 7,500 ft</line>
+    <line>Approach speed (Vref): 110 KIAS</line>
+    <line>Landing speed: 90 KIAS</line>
+    <line>Stall speed, full flaps (Vso): 63 KIAS</line>
+  </help>
+
  </sim>
 
  <controls>
