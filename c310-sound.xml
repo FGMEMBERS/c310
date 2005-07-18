@@ -236,7 +236,7 @@
    <path>Sounds/flaps.wav</path>
    <property>/surface-positions/flap-pos-norm</property>
    <volume>
-    <factor>0.15</factor>
+    <factor>0.45</factor>
    </volume>
    <reference-dist>10.0</reference-dist>
    <max-dist>20.0</max-dist>
