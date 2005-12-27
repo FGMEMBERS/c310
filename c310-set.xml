@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<PropertyList include="c310-jsbsim-base.xml">
+
+ <sim>
+
+  <description>Cessna 310 (civilian) with 3D cockpit</description>
+  
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <panel>
+    <visibility>false</visibility>
+  </panel>
+ 
+  <model>
+   <path>Aircraft/c310/Models/c310-dpm.xml</path>
+  </model> 
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y">-0.2</x-offset-m>
+    <y-offset-m archive="y">1.0</y-offset-m>
+    <z-offset-m archive="y">-0.2</z-offset-m>
+    <pitch-offset-deg>-15</pitch-offset-deg>
+   </config>
+  </view>
+
+ </sim>
+
+</PropertyList>

@@ -4,25 +4,108 @@
 
  <path>c310-dpm.ac</path>
 
+<!-- 3D Panel -->
  <panel>
-  <name>PanelInstruments</name>
-  <path>Aircraft/c310/Models/c310-2d-panel.xml</path>
+  <name>Panel3D</name>
+  <path>Aircraft/c310/Panels/c310-3d-panel.xml</path>
   <bottom-left>
-   <x-m>-0.95</x-m>
-   <y-m>-0.64</y-m>
-   <z-m>0.29</z-m>
+   <x-m>-1.0</x-m>
+   <y-m>-0.5</y-m>
+   <z-m> 0.45</z-m>
   </bottom-left>
   <bottom-right>
-   <x-m>-0.95</x-m>
-   <y-m>0.64</y-m>
-   <z-m>0.29</z-m>
+   <x-m>-1.0</x-m>
+   <y-m> 0.5</y-m>
+   <z-m> 0.45</z-m>
   </bottom-right>
   <top-left>
-   <x-m>-0.95</x-m>
-   <y-m>-0.64</y-m>
-   <z-m>1.25</z-m>
+   <x-m>-1.0</x-m>
+   <y-m>-0.5</y-m>
+   <z-m> 0.85</z-m>
   </top-left>
+  <depth-test type="bool">true</depth-test>
  </panel>
+
+ <model>
+  <name>MagCompass</name>
+  <path>Aircraft/Instruments-3d/mag-compass.xml</path>
+  <offsets>
+   <x-m>-0.95</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.9</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>TrimWheel</name>
+  <path>Aircraft/Instruments-3d/trim/trimwheel.xml</path>
+  <offsets>
+   <x-m>-0.85</x-m>
+   <y-m>-0.11</y-m>
+   <z-m>0.2</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <name>LeftYoke</name>
+  <path>Aircraft/Instruments-3d/yoke/yoke.xml</path>
+  <offsets>
+   <x-m>-1.0</x-m>
+   <y-m>-0.3</y-m>
+   <z-m>0.5</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>RightYoke</name>
+  <path>Aircraft/Instruments-3d/yoke/yoke.xml</path>
+  <offsets>
+   <x-m>-1.0</x-m>
+   <y-m>0.3</y-m>
+   <z-m>0.5</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <name>FlapControl</name>
+  <path>Aircraft/Instruments-3d/flaps/flaps.xml</path>
+  <offsets>
+   <x-m>-1.0</x-m>
+   <y-m>0.2</y-m>
+   <z-m>0.5</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <name>Quadrant</name>
+  <path>Aircraft/Instruments-3d/quadrant/quadrant.xml</path>
+  <offsets>
+   <x-m>-0.9</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.3</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <name>LeftPedals</name>
+  <path>Aircraft/Instruments-3d/pedals/pedals.xml</path>
+  <offsets>
+   <x-m>-1.2</x-m>
+   <y-m>-0.3</y-m>
+   <z-m>0.06</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>RightPedals</name>
+  <path>Aircraft/Instruments-3d/pedals/pedals.xml</path>
+  <offsets>
+   <x-m>-1.2</x-m>
+   <y-m>0.3</y-m>
+   <z-m>0.06</z-m>
+  </offsets>
+ </model>
+
 
  <animation>
   <type>select</type>
@@ -74,8 +157,8 @@
   <property>/engines/engine[0]/rpm</property>
   <center>
    <x-m>-1.5</x-m>
-   <y-m>-1.65</y-m>
-   <z-m>0.185</z-m>
+   <y-m>-1.67</y-m>
+   <z-m>0.3</z-m>
   </center>
   <axis>
    <x>1</x>
@@ -90,8 +173,8 @@
   <property>/engines/engine[1]/rpm</property>
   <center>
    <x-m>-1.5</x-m>
-   <y-m>1.65</y-m>
-   <z-m>0.185</z-m>
+   <y-m>1.67</y-m>
+   <z-m>0.3</z-m>
   </center>
   <axis>
    <x>1</x>
@@ -128,7 +211,7 @@
   <center>
    <x-m>-2.28</x-m>
    <y-m>0.0</y-m>
-   <z-m>0.035</z-m>
+   <z-m>0.095</z-m>
   </center>
   <axis>
    <x>0</x>
@@ -148,12 +231,12 @@
   <center>
    <x-m>-1.58</x-m>
    <y-m>-0.17</y-m>
-   <z-m>-0.165</z-m>
+   <z-m>-0.095</z-m>
   </center>
   <axis>
    <x>1</x>
    <y>0</y>
-   <z>0</z>
+   <z>-0.05</z>
   </axis>
  </animation>
 
@@ -168,7 +251,7 @@
   <center>
    <x-m>-1.58</x-m>
    <y-m>0.17</y-m>
-   <z-m>-0.165</z-m>
+   <z-m>-0.095</z-m>
   </center>
   <axis>
    <x>1</x>
@@ -186,7 +269,7 @@
   <center>
    <x-m>0.2</x-m>
    <y-m>-1.8</y-m>
-   <z-m>0.035</z-m>
+   <z-m>0.185</z-m>
   </center>
   <axis>
    <x>1</x>
@@ -204,7 +287,7 @@
   <center>
    <x-m>0.2</x-m>
    <y-m>1.8</y-m>
-   <z-m>0.035</z-m>
+   <z-m>0.185</z-m>
   </center>
   <axis>
    <x>1</x>
@@ -212,6 +295,27 @@
    <z>0</z>
   </axis>
  </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>Step</object-name>
+  <property>/gear/gear[0]/position-norm</property>
+  <factor>150</factor>
+  <offset-deg>-150</offset-deg>
+  <min-deg>-150</min-deg>
+  <max-deg>0</max-deg>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.4</y-m>
+   <z-m>0.05</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
 
  <animation>
   <type>rotate</type>
@@ -244,7 +348,7 @@
   <axis>
    <x>-0.05</x>
    <y>1</y>
-   <z>-.1</z>
+   <z>-0.1</z>
   </axis>
  </animation>
 
@@ -262,7 +366,7 @@
   <axis>
    <x>0.05</x>
    <y>1</y>
-   <z>.1</z>
+   <z>0.1</z>
   </axis>
  </animation>
 
@@ -286,8 +390,8 @@
  <animation>
   <type>rotate</type>
   <object-name>RightAileron</object-name>
-  <property>/surface-positions/right-aileron-pos-norm</property>
-  <factor>15</factor> <!-- check -->
+  <property>/surface-positions/left-aileron-pos-norm</property>
+  <factor>-15</factor> <!-- check -->
   <center>
    <x-m>0.75</x-m>
    <y-m>4.0</y-m>
@@ -317,5 +421,8 @@
    <z>0.0</z>
   </axis>
  </animation>
+
+<!-- Ordered list of objects to force rendering order -->
+
 
 </PropertyList>

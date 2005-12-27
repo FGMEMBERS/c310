@@ -4,17 +4,25 @@
 
  <sim>
 
-  <description>Cessna 310 (civilian) with 3D cockpit</description>
-  
+  <description>Cessna 310R (1979 model) with 3D cockpit</description>
+  <author>Dave Megginson (maintained by Stuart Buchanan)</author>
+  <status>production</status>
+
   <virtual-cockpit archive="y">true</virtual-cockpit>
-  <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
   <panel>
+    <path>Aircraft/c310/Panels/c310-vfr-panel.xml</path>
     <visibility>false</visibility>
   </panel>
- 
+
+  <panel_2>
+    <path>Aircraft/c310/Panels/c310-mini-panel.xml</path>
+    <visibility>false</visibility>
+  </panel_2>
+
   <model>
-   <path>Aircraft/c310/Models/c310-dpm.xml</path>
+   <path archive="y">Aircraft/c310/Models/c310-dpm.xml</path>
   </model> 
 
   <view n="0">
@@ -28,5 +36,31 @@
   </view>
 
  </sim>
+
+<!-- ================ map keyboard ================ -->
+ <input> 
+    <keyboard> 
+       <!-- map keys for Propeller Control -->
+        <key n="78"> 
+          <name>N</name>
+          <desc>Propeller Coarse.</desc>
+          <repeatable type="bool">true</repeatable>
+          <binding> 
+           <command>nasal</command>
+           <script>controls.adjPropeller(-1)</script>
+          </binding>
+        </key>
+        <key n="110"> 
+          <name>n</name>
+          <repeatable type="bool">true</repeatable>
+          <desc>Propeller Fine.</desc>
+          <binding> 
+           <command>nasal</command>
+           <script>controls.adjPropeller(1)</script>
+          </binding>
+        </key>
+      </keyboard>
+    </input>
+
 
 </PropertyList>

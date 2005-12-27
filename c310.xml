@@ -60,9 +60,6 @@
     AC_POINTMASS 180.0 37.0 -14.0 24.0
 <!-- Co-pilot -->
     AC_POINTMASS 180.0 37.0 14.0 24.0
-<!-- Rear passengers -->
-    AC_POINTMASS 150.0 71.0 -14.0 24.0
-    AC_POINTMASS 150.0 71.0 14.0 24.0
 <!-- Baggage -->
     AC_POINTMASS 100.0 96.0 0.0 24.0
     AC_AERORP      46.0   0.0  8.6
@@ -88,12 +85,18 @@
     <brake group membership>         One of <LEFT | CENTER | RIGHT | NOSE | TAIL | NONE>
     <max steer angle>                Maximum steerable angle in degrees
     <retractable>                    One of RETRACT or FIXED
+
+  AC_GEAR    NOSE       -60.2   0.0 -27.0  5400 1600  0.5  0.8 0.02 STEERABLE NONE 10 RETRACT
+     AC_GEAR    LEFT_MAIN   50.7 -70.8 -31.0  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0 RETRACT
+     AC_GEAR    RIGHT_MAIN  50.7  70.8 -31.0  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0 RETRACT
+
+
     -->
 
 
-     AC_GEAR    NOSE       -60.2   0.0 -27.0  5400 1600  0.5  0.8 0.02 STEERABLE NONE 10 RETRACT
-     AC_GEAR    LEFT_MAIN   50.7 -70.8 -31.0  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0 RETRACT
-     AC_GEAR    RIGHT_MAIN  50.7  70.8 -31.0  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0 RETRACT
+     AC_GEAR    NOSE       -60.2   0.0 -35.0  5400 1600  0.5  0.8 0.02 STEERABLE NONE 10 RETRACT
+     AC_GEAR    LEFT_MAIN   50.7 -70.8 -37.5  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0 RETRACT
+     AC_GEAR    RIGHT_MAIN  50.7  70.8 -37.5  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0 RETRACT
      AC_GEAR    TAIL_SKID  221.8   0.0   0.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0 FIXED
      AC_GEAR    NOSE        96.3   0.0  10.3 10000 2000  0.2   0.2 0.2  FIXED NONE 0 FIXED
      AC_GEAR    CABIN_LEFT   0.0 -25.0   0.0 10000 2000  0.2   0.2 0.2  FIXED NONE 0 FIXED
