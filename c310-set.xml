@@ -29,4 +29,57 @@
 
  </sim>
 
+ <limits>
+   <max-flap-extension-speed>
+     <flaps>0.3</flaps>
+     <speed>155</speed>
+   </max-flap-extension-speed>
+   <max-flap-extension-speed>
+     <flaps>0.6</flaps>
+     <speed>140</speed>
+   </max-flap-extension-speed>
+   <max-flap-extension-speed>
+     <flaps>0.9</flaps>
+     <speed>140</speed>
+   </max-flap-extension-speed>
+   <max-gear-extension-speed>140</max-gear-extension-speed>
+   <max-positive-g>3.5</max-positive-g>
+   <max-negative-g>-1.52</max-negative-g>
+   <vne>223</vne>
+ </limits>
+
+<nasal>
+  <failures> 
+    <file>Aircraft/Generic/limits.nas</file>
+  </failures>
+ </nasal>
+
+ 
+ <!-- ================ map keyboard ================ -->
+ <input> 
+    <keyboard> 
+       <!-- map keys for Propeller Control -->
+        <key n="78"> 
+          <name>N</name>
+          <desc>Propeller Coarse.</desc>
+           <binding> 
+           <command>nasal</command>
+           <script>
+	     controls.adjPropeller(-1);
+	   </script>
+          </binding>
+        </key>
+        <key n="110"> 
+          <name>n</name>
+          <desc>Propeller Fine.</desc>
+          <binding> 
+           <command>nasal</command>
+           <script>
+  	     controls.adjPropeller(1);
+	   </script>
+          </binding>
+        </key>
+      </keyboard>
+    </input> 
+
 </PropertyList>

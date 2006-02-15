@@ -25,11 +25,20 @@ Common configuration for all C310 models.
 
   <help>
     <title>Cessna 310R</title>
+   <line>Velocities</line>
+   <line>  Va1 (maneuvering)   : 148 KIAS</line>
+   <line>  Vno (max cruise)    : 189 KIAS</line>
+   <line>  Vne (never exceed)  : 223 KIAS</line>
+   <line>  Vmc (min control)   : 74  KIAS</line>
+   <line>  Vref (approach)     : 110 KIAS</line>
+   <line>  Vso (stall,flaps)   : 63 KIAS</line>
+   <line></line>
     <line>Maximum cruise speed: 189 KTAS at 8,000 ft</line>
     <line>Econo-cruise speed: 144 KTAS at 7,500 ft</line>
-    <line>Approach speed (Vref): 110 KIAS</line>
-    <line>Landing speed: 90 KIAS</line>
-    <line>Stall speed, full flaps (Vso): 63 KIAS</line>
+   <line></line>   
+   <line>Maximum Flap Extension Speeds</line>
+   <line>  15  degrees : 155 KIAS</line>
+   <line>  15+ degrees : 140 KIAS</line>
     <line></line>
     <line>Use N/n for Propeller pitch control</line>
   </help>
