@@ -323,9 +323,9 @@
             <contents unit="LBS"> 95 </contents>
         </tank>
     </propulsion>
-
+<!--
     <autopilot file="c310ap"/>
-
+-->
     <flight_control name="Cessna 310">
         <channel name="Pitch">
             <summer name="Pitch Trim Sum">
