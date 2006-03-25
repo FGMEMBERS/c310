@@ -8,6 +8,10 @@
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
+    <startup>
+      <splash-texture>Aircraft/c310/c310-splash.rgb</splash-texture>
+    </startup>
+
     <panel>
       <visibility>false</visibility>
     </panel>

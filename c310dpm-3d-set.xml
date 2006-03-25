@@ -4,8 +4,12 @@
 
  <sim>
 
+  <startup>
+   <splash-texture>Aircraft/c310/c310-splash.rgb</splash-texture>
+  </startup>
+
   <description>Cessna 310R (1979 model) with 3D cockpit</description>
-  <author>Dave Megginson (maintained by Stuart Buchanan)</author>
+  <author>David Megginson (maintained by Stuart Buchanan)</author>
   <status>production</status>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
