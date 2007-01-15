@@ -327,6 +327,11 @@
     <autopilot file="c310ap"/>
 -->
     <flight_control name="Cessna 310">
+        <!-- Declare some interface properties -->
+
+        <property>ap/elevator_cmd</property>
+        <property>ap/aileron_cmd</property>
+
         <channel name="Pitch">
             <summer name="Pitch Trim Sum">
                 <input>ap/elevator_cmd</input>
