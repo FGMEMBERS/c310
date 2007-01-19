@@ -39,8 +39,10 @@ Common configuration for all C310 models.
    <line>Maximum Flap Extension Speeds</line>
    <line>  15  degrees : 155 KIAS</line>
    <line>  15+ degrees : 140 KIAS</line>
-    <line></line>
-    <line>Use N/n for Propeller pitch control</line>
+   <key>
+    <name>n/N</name>
+    <desc>Propeller pitch finer/coarser</desc>
+   </key>
   </help>
 
  </sim>

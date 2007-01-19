@@ -56,31 +56,4 @@
     </failures>
   </nasal>
 
-
- <!-- ================ map keyboard ================ -->
-  <input>
-    <keyboard>
-      <!-- map keys for Propeller Control -->
-      <key n="78">
-        <name>N</name>
-        <desc>Propeller Coarse.</desc>
-        <repeatable type="bool">true</repeatable>
-        <binding>
-          <command>nasal</command>
-          <script>controls.adjPropeller(-1)</script>
-        </binding>
-      </key>
-
-      <key n="110">
-        <name>n</name>
-        <desc>Propeller Fine.</desc>
-        <repeatable type="bool">true</repeatable>
-        <binding>
-          <command>nasal</command>
-          <script>controls.adjPropeller(1)</script>
-        </binding>
-      </key>
-    </keyboard>
-  </input>
-
 </PropertyList>
