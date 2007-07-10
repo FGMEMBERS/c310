@@ -112,7 +112,7 @@
   <object-name>LeftPropeller</object-name>
   <condition>
    <less-than>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <value>400</value>
    </less-than>
   </condition>
