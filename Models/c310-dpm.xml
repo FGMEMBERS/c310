@@ -23,7 +23,7 @@
    <y-m>-0.5</y-m>
    <z-m> 0.85</z-m>
   </top-left>
-  <depth-test type="bool">false</depth-test>
+  <depth-test type="bool">true</depth-test>
  </panel>
 
  <model>
