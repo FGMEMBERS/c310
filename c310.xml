@@ -323,14 +323,10 @@
             <contents unit="LBS"> 95 </contents>
         </tank>
     </propulsion>
-<!--
-    <autopilot file="c310ap"/>
--->
-    <flight_control name="Cessna 310">
-        <!-- Declare some interface properties -->
 
-        <property>ap/elevator_cmd</property>
-        <property>ap/aileron_cmd</property>
+    <autopilot file="c310ap"/>
+
+    <flight_control name="Cessna 310">
 
         <channel name="Pitch">
             <summer name="Pitch Trim Sum">
@@ -979,21 +975,24 @@
             </function>
         </axis>
     </aerodynamics>
-    <output name="C310.csv" type="CSV" rate="2">
+<!--
+    <output name="C310.csv" type="CSV" rate="10">
         <simulation> OFF </simulation>
         <atmosphere> OFF </atmosphere>
         <massprops> OFF</massprops>
-        <aerosurfaces> ON </aerosurfaces>
-        <rates> ON </rates>
-        <velocities> ON </velocities>
+        <aerosurfaces> OFF </aerosurfaces>
+        <rates> OFF </rates>
+        <velocities> OFF </velocities>
         <forces> OFF </forces>
         <moments> OFF </moments>
         <position> ON </position>
-        <propulsion> ON </propulsion>
-        <fcs> ON </fcs>
+        <propulsion> OFF </propulsion>
+        <fcs> OFF </fcs>
         <ground_reactions> OFF </ground_reactions>
         <coefficients> OFF </coefficients>
-	<property> velocities/h-dot-fps </property>
+        <property> position/long-gc-rad </property>
+        <property> position/lat-gc-rad </property>
+        <property> position/h-agl-ft </property>
     </output>
     <output name="localhost" type="SOCKET" port="1138" rate="2">
         <simulation> OFF </simulation>
@@ -1017,4 +1016,5 @@
         <property> propulsion/engine[0]/advance-ratio </property>
         <property> forces/fbx-gear-lbs </property>
     </output>
+-->
 </fdm_config>
