@@ -11,7 +11,7 @@
         <filecreationdate> 2001-11-24 </filecreationdate>
         <version> $Revision$ </version>
         <description>
-            Models a Cessna 310 light twin. The airplane has a wingspan of 35.98 feet, wing area of 178 square feet,
+            Models a C310 light twin. The airplane has a wingspan of 35.98 feet, wing area of 178 square feet,
             an aspect ratio of 7.3, and an M.A.C. of 5 feet based on projection of the outboard leading edge
             of the wing through the fuselage. The wing airfoil section is a modified NACA 64(2)A215 airfoil
             with the trailing edge cusp faired out. The wing has 5 degrees of dihedral, no twist, and is at 2 degrees
@@ -19,6 +19,20 @@
             The horizontal tail is all-movable, with a deflection range of 4 to -14 degrees. Control deflection
             range for the ailerons is 14 to -18 degrees. Normal rudder deflection range is +/-27 degrees.
         </description>
+        <license
+          licenseName="GPL (General Public License)"
+          licenseURL="http://www.gnu.org/licenses/gpl.html"/>
+        <note>
+          This model was created using publicly available data, publicly available
+          technical reports, textbooks, and guesses. It contains no proprietary or
+          restricted data. It has been validated only to the extent that it seems
+          to "fly right", and possibly to comply to published, publicly known,
+          performance data (maximum speed, endurance, etc.). Thus, this model
+          is meant for educational and entertainment purposes only.
+
+          This simulation model is not endorsed by the manufacturer. This model
+          is not to be sold.
+        </note>
         <reference title="Full-Scale Wind Tunnel Investigation of Static Longitudinal and Lateral Characteristics of a Light Twin-Engine Airplane"
             author="Marvin P. Fink, Delma C. Freeman, Jr."
             date="1969-01-01" refID="NASA TN D-4983"/>
@@ -323,14 +337,29 @@
             <contents unit="LBS"> 95 </contents>
         </tank>
     </propulsion>
+
+  <system file="GNCUtilities"/>
+
 <!--
-    <autopilot file="c310ap"/>
+  <autopilot file="c310ap">
+
+    <! - - Roll channel A/P gains - - >
+    
+    <property value="50.0"> ap/roll-pid-kp </property>
+    <property value="5.0"> ap/roll-pid-ki </property>
+    <property value="17.0"> ap/roll-pid-kd </property>
+
+  </autopilot>
 -->
+
     <flight_control name="Cessna 310">
+
+        <property>ap/elevator_cmd</property>
+        <property>ap/aileron_cmd</property>
 
         <channel name="Pitch">
             <summer name="Pitch Trim Sum">
-<!--                <input>ap/elevator_cmd</input> -->
+                <input>ap/elevator_cmd</input>
                 <input>fcs/elevator-cmd-norm</input>
                 <input>fcs/pitch-trim-cmd-norm</input>
                 <clipto>
@@ -366,7 +395,7 @@
 
         <channel name="Roll">
             <summer name="Roll Trim Sum">
-<!--                <input>ap/aileron_cmd</input> -->
+                <input>ap/aileron_cmd</input>
                 <input>fcs/aileron-cmd-norm</input>
                 <input>fcs/roll-trim-cmd-norm</input>
                 <clipto>
@@ -980,20 +1009,22 @@
         <simulation> OFF </simulation>
         <atmosphere> OFF </atmosphere>
         <massprops> OFF</massprops>
-        <aerosurfaces> OFF </aerosurfaces>
-        <rates> OFF </rates>
-        <velocities> OFF </velocities>
-        <forces> OFF </forces>
-        <moments> OFF </moments>
+        <aerosurfaces> ON </aerosurfaces>
+        <rates> ON </rates>
+        <velocities> ON </velocities>
+        <forces> ON </forces>
+        <moments> ON </moments>
         <position> ON </position>
-        <propulsion> OFF </propulsion>
-        <fcs> OFF </fcs>
+        <propulsion> ON </propulsion>
+        <fcs> ON </fcs>
         <ground_reactions> OFF </ground_reactions>
         <coefficients> OFF </coefficients>
         <property> position/long-gc-rad </property>
         <property> position/lat-gc-rad </property>
         <property> position/h-agl-ft </property>
     </output>
+-->
+  <!--
     <output name="localhost" type="SOCKET" port="1138" rate="2">
         <simulation> OFF </simulation>
         <atmosphere> OFF </atmosphere>
@@ -1016,5 +1047,5 @@
         <property> propulsion/engine[0]/advance-ratio </property>
         <property> forces/fbx-gear-lbs </property>
     </output>
--->
+    -->
 </fdm_config>
