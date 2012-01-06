@@ -35,7 +35,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <PropertyList>
 
  <name>Cessna C310 VFR Panel</name>
-<background>Aircraft/c310/Panels/c310-panel-bg.rgb</background>
+<background>Aircraft/Generic/Panels/Textures/transparent-bg.rgb</background>
  <w>1470</w>
  <h>610</h>
  <y-offset>0</y-offset>
@@ -59,8 +59,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../../Instruments/twin-magneto-switch.xml">
    <name>Magneto switch panel</name>
-   <x>85</x>
-   <y>50</y>
+   <x>20</x>
+   <y>150</y>
   </instrument>
 
 <!-- end engine switched -->
