@@ -15,7 +15,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
 
  <instruments>
 
-  <instrument include="../../Instruments/asi-260-knot.xml">
+  <instrument include="Aircraft/Instruments/asi-260-knot.xml">
    <name>Airspeed Indicator</name>
    <x>300</x>
    <y>300</y>
@@ -23,7 +23,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
    <h>72</h>
   </instrument>
 
-  <instrument include="../../Instruments/attitude-indicator.xml">
+  <instrument include="Aircraft/Instruments/attitude-indicator.xml">
    <name>Attitude Gyro</name>
    <x>380</x>
    <y>300</y>
@@ -31,7 +31,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
    <h>72</h>
   </instrument>
 
-  <instrument include="../../Instruments/altimeter.xml">
+  <instrument include="Aircraft/Instruments/altimeter.xml">
    <name>Altimeter</name>
    <x>460</x>
    <y>300</y>
@@ -39,7 +39,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
    <h>72</h>
   </instrument>
 
-  <instrument include="../../Instruments/turn.xml">
+  <instrument include="Aircraft/Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>300</x>
    <y>220</y>
@@ -47,7 +47,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
    <h>72</h>
   </instrument>
 
-  <instrument include="../../Instruments/hsi.xml">
+  <instrument include="Aircraft/Instruments/hsi.xml">
    <name>Horizontal Situation Indicator</name>
    <x>380</x>
    <y>220</y>
@@ -55,7 +55,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
    <h>72</h>
   </instrument>
 
-  <instrument include="../../Instruments/vertical.xml">
+  <instrument include="Aircraft/Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
    <x>460</x>
    <y>220</y>
@@ -63,7 +63,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
    <h>72</h>
   </instrument>
 
-  <instrument include="../../Instruments/vertical.xml">
+  <instrument include="Aircraft/Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
    <x>460</x>
    <y>220</y>
@@ -71,7 +71,7 @@ Legacy 2D instruments and actions for the 3D C310 cockpit.
    <h>72</h>
   </instrument>
 
-  <instrument include="../../Instruments/tach-2700-redline.xml">
+  <instrument include="Aircraft/Instruments/tach-2700-redline.xml">
    <name>RPM Gauge</name>
    <x>460</x>
    <y>140</y>
