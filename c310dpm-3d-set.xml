@@ -11,6 +11,7 @@
   <description>Cessna 310R (1979 model) with 3D cockpit</description>
   <author>David Megginson (maintained by Stuart Buchanan)</author>
   <status>production</status>
+  <variant-of>c130</variant-of>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
@@ -27,7 +28,7 @@
 
   <model>
    <path archive="y">Aircraft/c310/Models/c310-dpm.xml</path>
-  </model> 
+  </model>
 
   <view n="0">
    <internal archive="y">true</internal>
@@ -61,7 +62,7 @@
  </limits>
 
 <nasal>
-  <failures> 
+  <failures>
     <file>Aircraft/Generic/limits.nas</file>
   </failures>
  </nasal>
