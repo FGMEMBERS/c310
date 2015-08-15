@@ -2,7 +2,7 @@
 <!--
 ************************************************************************
 Cessna 310R simulation config. This files ties together all the components
-used by FGFS to represent the C310R. Components include the flight data 
+used by FGFS to represent the C310R. Components include the flight data
 model, instrument panel, and external 3D model.
 3D models can be downloaded from http://home.t-online.de/home/Wolfram.Kuss/
 
@@ -12,7 +12,7 @@ October 23 2001 John Check, fgpanels@rockfish.net
 
 <PropertyList include="c310-yasim-base.xml">
  <sim>
-
+  <variant-of>c130</variant-of>
   <description>Cessna 310 (YASim)</description>
 
   <panel>
@@ -25,10 +25,8 @@ October 23 2001 John Check, fgpanels@rockfish.net
 
   <model>
    <path>Aircraft/c310u3a/Models/c310u3a.xml</path>
-  </model> 
+  </model>
 
  </sim>
 
 </PropertyList>
-
-
