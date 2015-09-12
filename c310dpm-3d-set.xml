@@ -11,7 +11,7 @@
   <description>Cessna 310R (1979 model) with 3D cockpit</description>
   <author>David Megginson (maintained by Stuart Buchanan)</author>
   <status>production</status>
-  <variant-of>c130</variant-of>
+  <variant-of>c310</variant-of>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>

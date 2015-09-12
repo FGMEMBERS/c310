@@ -12,7 +12,7 @@ October 23 2001 John Check, fgpanels@rockfish.net
 
 <PropertyList include="c310-yasim-base.xml">
  <sim>
-  <variant-of>c130</variant-of>
+  <variant-of>c310</variant-of>
   <description>Cessna 310 (YASim)</description>
 
   <panel>
