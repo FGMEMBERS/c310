@@ -5,6 +5,13 @@
   <sim>
     <description>Cessna 310 (civilian) with 3D cockpit</description>
 
+    <rating>
+      <FDM type="int">3</FDM>
+      <systems type="int">1</systems>
+      <cockpit type="int">2</cockpit>
+      <model type="int">2</model>
+    </rating>
+
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
